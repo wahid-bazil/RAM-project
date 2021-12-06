@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+}
+.btn-pa{
+    background-image: linear-gradient(#F87988 , #C20730);
+}
+
+.btn-primary0{
+    color: #C20831;
+}
+
+.home-title{
+    color: #CF0A3D;
+    font-family: 'El Messiri', sans-serif;
+    text-align: start;
+    font-weight: bold;
+    font-size: 55px;
+    
+}
+.home-subtitle{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    font-weight:bolder
+  
+
+    
+    
+}
+.home-text{
+    font-family: 'El Messiri', sans-serif;
+    text-align: start;
+    font-weight: 300;
+    font-size: 18px;
+}
+.home-form {
+    border-radius: 15px;
+    box-shadow:5px 5px 5px 5px rgba(255, 255, 255, 0.1  );
+    background: rgba(255, 255, 255, 0.7)    /*  10% opaque green */ 
+  
+  
+}
+.home-form > div {
+    opacity: 1;
+}
+.form-title{
+    background-color: #CD2043;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: start;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.home-form > div > div {
+    padding-left: 15px;
+    padding-right: 15px ;
+}
+.home-form .label {
+    font-family: "My Custom Font", Verdana, Tahoma;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.home-form .label span {
+    position: relative;
+    top :5px;
+    left: 10px;
+}
+
+.home-form i {
+    font-size:25px;
+    background-color: #FCD0DD;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
