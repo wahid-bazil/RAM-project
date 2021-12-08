@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @font-face {
     font-family: "My Custom Font";
     src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
-}
-.btn-pa{
-    background-image: linear-gradient(#F87988 , #C20730);
 }
 
 .btn-primary0{
@@ -19,17 +18,24 @@
     text-align: start;
     font-weight: bold;
     font-size: 55px;
+    position: relative;
+    right: 20px;
+    
+    
+}
+.home-title::before{
+    content:url('../images/group-270.png'); /* with class ModalCarrot ??*/
+    display: inline-block;
+    position: relative;
+    margin: 0px;
     
 }
 .home-subtitle{
     font-family: 'El Messiri', sans-serif;
-    font-size: 20px;
+    font-size : 20px;
     text-align: justify;
-    font-weight:bolder
-  
+    font-weight:bolder;
 
-    
-    
 }
 .home-text{
     font-family: 'El Messiri', sans-serif;
@@ -37,46 +43,64 @@
     font-weight: 300;
     font-size: 18px;
 }
-.home-form {
+.form-container  {
     border-radius: 15px;
-    box-shadow:5px 5px 5px 5px rgba(255, 255, 255, 0.1  );
-    background: rgba(255, 255, 255, 0.7)    /*  10% opaque green */ 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: rgba(245, 240, 240, 0.8);
+    padding: 25px;
+    font-family: 'El Messiri', sans-serif;
   
   
 }
-.home-form > div {
+.form-container  > div {
     opacity: 1;
 }
 .form-title{
     background-color: #CD2043;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     text-align: start;
     color: white;
     font-weight: 700;
     text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Lato', sans-serif;
 }
-.home-form > div > div {
+.form-title ::after{
+ 
+}
+.form-container  > div > div {
     padding-left: 15px;
     padding-right: 15px ;
+    border-right: 1px solid rgba(192, 192, 192, 0.7 )   
+  
 }
-.home-form .label {
-    font-family: "My Custom Font", Verdana, Tahoma;
+.form-container  .label {
+    font-weight: bold;
     font-size: 18px;
-    font-weight: 700;
-
+    text-shadow: 1px 1px 1px #aaa
 }
-.home-form .label span {
+
+.form-container  .label span {
     position: relative;
-    top :5px;
+    top :8px;
     left: 10px;
 }
 
-.home-form i {
+.form-container  i {
     font-size:25px;
     background-color: #FCD0DD;
     border-radius: 5px;
     width: 40px;
     height: 40px;
     align-items: center;
+}
+/******/
+.btn-ram-primary{
+    background-image: linear-gradient(#F87988 , #C20730);
+    width:22%;
+    height: 80px;
+    box-shadow: rgba(189, 99, 99, 0.4) 0px 14px 28px, rgba(190, 90, 90, 0.4) 0px 10px 10px;
+
 }

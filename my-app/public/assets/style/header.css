@@ -1,27 +1,70 @@
 header {
-    background-color: bisque;
+    background-color: white;
+    height:77px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    
     
 }
-.right-header ul {
-    display: block;
-    list-style-type: none;
-    padding:0;
-    margin:0;
+
+.vl {
+    border-left: 2px solid #c7c6c6;
+    opacity: 0.3;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 15px;
+  
+  }
+
+header .hl {
+    border-top:3px solid #D5123A;
+    margin-top:22px;
+    position: relative;
+    top:1.7px;
     
-} 
-.right-header  li  {
-    margin-left:2px;
-    float:left; /*pour IE*/
-    list-style-type: none;
+  
+   
+}
+header .logo .ram img {
+    width: 130px;
+}
+header .logo .one-world img {
+    width: 45px;
+    
+}
+header .right-header {
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 77px;
+
+}
+.right-header ul {
+    height: 100%;
+    justify-content: space-between;
 } 
 
-.right-header   ul li a {
+.right-header   ul li  {
     display:block;
     float:left;
     color: black;
     text-decoration: none;
-    
-   
-  
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left:2px;
+    float:left; /*pour IE*/
+    list-style-type: none;
+    height: 100%;
+    margin-left: 10px;
     
     }
+
+header .select {
+    width: 50px;
+    height : 30px
+}
+
+

@@ -3,13 +3,15 @@ import ReactDOM from "react-dom";
 import Header from "./header";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { GrNext } from 'react-icons/gr';
+import { MdNavigateNext } from 'react-icons/md';
 import { FaPlaneDeparture } from 'react-icons/fa';
 import { FaHashtag } from 'react-icons/fa';
 import { MdFamilyRestroom } from 'react-icons/md';
 import { BsCurrencyExchange } from 'react-icons/bs';
 import { IconContext } from "react-icons";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SliderIdex from "./slider";
 
 function Home() {
     const [count, setCount] = useState(0);
@@ -19,11 +21,13 @@ function Home() {
 
     return (
         <div className="container">
-            <div className="test " style={{
+                <div className="home ">
+            <div style={{
                 backgroundImage: `url(${image})`
             }}>
-                <div className="p-5">
-                    <div className="mt-5 col-6 pt-5">
+                <div className="p-5 pt-4">
+                    {<Header />}
+                    <div className="col-6 mt-5  pt-5">
                         <h1 className="home-title">
                             BUSINESS CLASS
                         </h1>
@@ -36,25 +40,30 @@ function Home() {
                                 faites l'expérience d'un voyage aillant confort ,Plaisir et sérénité
                             </p>
                         </div>
-
                     </div>
-                    <div>
-                        <div className=" form-title col-2 pt-3 pb-3">
+                    <div className="form mt-5">
+                        <div className=" form-title col-2   ">
                             <div className="">
                                 SURCLASSEMENT
                             </div>
                         </div>
-                        <div className="home-form   pt-4 pb-3  ">
+                        <div className="form-container">
                             <div className="d-flex justify-content-between   ">
                                 <div className="col-3 ">
                                     <div className="label d-flex ">
-                                        <i><FaPlaneDeparture className=" " /></i>
+                                        <IconContext.Provider
+                                            value={{ color: '#CF013E' }}
+                                        >
+                                            <i>
+                                                <FaHashtag />
+                                            </i>
+                                        </IconContext.Provider>
                                         <span> Aéroport de départ</span>
                                     </div>
                                     <div className=" ">
                                         <TextField
                                             id="standard-multiline-flexible"
-                                            value={'Casablanca'}
+                                            value={'Casablanca Mohamed v (CMN)'}
                                             variant="standard"
                                             margin="normal"
                                             fullWidth
@@ -63,7 +72,14 @@ function Home() {
                                 </div>
                                 <div className="col-3">
                                     <div className="label d-flex">
-                                        <i><FaHashtag /></i>
+
+                                        <IconContext.Provider
+                                            value={{ color: '#CF013E' }}
+                                        >
+                                            <i>
+                                                <FaHashtag />
+                                            </i>
+                                        </IconContext.Provider>
                                         <span>Code de réservation</span>
                                     </div>
 
@@ -71,37 +87,46 @@ function Home() {
                                         id="standard-multiline-flexible"
                                         multiline
                                         maxRows={4}
-                                        value={'Casablanca'}
+                                        value={'Code (6 caratère)..'}
                                         variant="standard"
                                         margin="normal"
                                         fullWidth
                                     />
                                 </div>
-                                <div className="col-3">
+                                <div className="col-3 ">
                                     <div className="label d-flex">
-                                        <i>
-                                            <MdFamilyRestroom />
+                                        <IconContext.Provider
+                                            value={{ color: '#CF013E' }}
+                                        >
+                                            <i>
 
-                                        </i>
+                                                <MdFamilyRestroom />
+
+                                            </i>
+                                        </IconContext.Provider>
                                         <span>NOM</span>
                                     </div>
                                     <TextField
                                         id="standard-multiline-flexible"
                                         multiline
                                         maxRows={4}
-                                        value={'Casablanca'}
+                                        value={'Nom de famille '}
                                         variant="standard"
                                         margin="normal"
                                         fullWidth
                                     />
                                 </div>
-                                <div className="col-3">
+                                <div className="col-3 border-0">
                                     <div className="d-flex justify-content-between">
                                         <div>
                                             <div className="label d-flex">
-                                                <i>
-                                                    <BsCurrencyExchange />
-                                                </i>
+                                                <IconContext.Provider
+                                                    value={{ color: '#CF013E' }}
+                                                >
+                                                    <i>
+                                                        <BsCurrencyExchange />
+                                                    </i>
+                                                </IconContext.Provider>
                                                 <span>Devise</span>
                                             </div>
 
@@ -109,19 +134,18 @@ function Home() {
                                                 id="standard-multiline-flexible"
                                                 multiline
                                                 maxRows={4}
-                                                value={'Casablanca'}
+                                                value={'MAD'}
                                                 variant="standard"
                                                 margin="normal"
                                                 fullWidth
                                             />
                                         </div>
-                                        <button className="btn btn-pa ">
-                                            <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>
-                                               
-                                                    <GrNext />
-                                                
-                                            </IconContext.Provider>
-
+                                        <button className="btn btn-ram-primary ">
+                                        <IconContext.Provider
+                                                    value={{ color: 'white' , size:"40px" }}
+                                                >
+                                                        <MdNavigateNext />
+                                                </IconContext.Provider>
                                         </button>
 
                                     </div>
@@ -129,13 +153,15 @@ function Home() {
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
+        </div >
+        <div>
+            <SliderIdex/>
         </div>
+            
+        </div>
+    
     );
 }
 export default Home
