@@ -10,13 +10,19 @@ header {
 }
 
 .vl {
-    border-left: 2px solid #c7c6c6;
-    opacity: 0.3;
-    height: 50px;
-    margin-left: 5px;
-    margin-right: 15px;
+    
+
   
   }
+
+.vl.active {
+  height: 150px;
+  -webkit-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+-o-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+  
+}
 
 header .hl {
     border-top:3px solid #D5123A;

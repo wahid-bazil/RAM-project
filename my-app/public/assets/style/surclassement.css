@@ -1,0 +1,201 @@
+.MuiTextField-root i{
+    font-size: 25px;
+    color: #C20831;
+}
+
+
+
+.surclassement .phase-title {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.surclassement .phase-1 .description-container  {
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: 1px solid rgba(149, 157, 165, 0.5);
+    display: block;
+    position: relative;
+    font-weight: 700;
+}
+
+.surclassement .phase-1 .description-container .title{
+    font-size: 20px;
+}
+
+.surclassement .phase-1 .description-container::after {
+    content: "";
+    background: url('../images/description.png');
+    opacity: 0.1;
+    top: 0.5px;
+    left: -6px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+  }
+
+.surclassement  .phase-title {
+      font-size:13px;
+      color: #8B5571;
+      
+  }
+
+  .surclassement  .phase-title span {
+      position: relative;
+      top: 10px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700 ;
+  }
+.surclassement  .phase-title i {
+    font-size: 25px;
+    margin-right: 7px;
+    
+}
+.surclassement  .phase-title  .vl {
+    border-left: 2px solid #8B5571;
+    margin-right: 7px;
+}
+
+.surclassement .pahse-2 .passagers {
+    border: 1px solid #707070;
+    border-radius: 20px;
+    height: 38px;
+}
+
+.surclassement .pahse-2 .passagers i{
+    background-color: #C20831;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.surclassement .pahse-2 .passagers span{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700 ;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.surclassement .pahse-2 .vols >div {
+   border: 1px solid #707070;
+   border-radius: 5px;
+   padding: 10px;
+
+   
+}
+
+.surclassement .pahse-2 .vols .vl {
+    border-left: 2px solid #707070;
+    margin-right: 7px;
+    height: 70%;
+    
+    
+    
+}
+.surclassement .pahse-2 .vols i {
+    font-size: 25px;
+    color :#CF013E
+}
+.surclassement .pahse-2 .vol-details{
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.surclassement .pahse-2 .vol-details .vl {
+    margin-left: 5px;
+}
+
+.surclassement .pahse-2 .section {
+    background-color: #FCFCFC;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+/*  phase 3 */
+
+.phase-3 .coordinates {
+    font-family: 'Lato', sans-serif;
+}
+.phase-3 .coordinates i {
+    font-size: 30px;
+}
+.phase-3 .coordinates {
+    font-size: 12px;
+}
+.phase-3 .coordinates .line {
+    height: 1px;
+    border-top: 1px solid #707070;;
+    width: 30%;
+}
+
+
+.phase-3 .coordinates .center i {
+    
+    color: #707070;
+}
+.phase-3 .coordinates .left i {
+    color:#C47E2C
+}
+.phase-3 .coordinates .right i {
+    color:#C47E2C
+}
+.phase-3 .hour {
+    font-size: 13px;
+}
+.phase-3 .place {
+    font-size: 10px;
+}
+.phase-3 .date {
+    font-size: 9px;
+    color:#C47E2C
+}
+.phase-3 .passagers > div {
+    border: 1px solid #707070;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+}
+.phase-3 .passagers > div i {
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+    
+}
+.phase-3 .passagers > div span {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.phase-3 .total {
+    border: 1px solid #707070;
+    border-radius: 15px;
+}
+.phase-3 .total > div {
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.phase-3 .total .label {
+    background-color: #E3E5E8;
+}
+
+.phase-3 .total span {
+    color: #C20831;
+}
+

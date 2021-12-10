@@ -18,7 +18,6 @@ function Home() {
     const image = ['./assets/images/home.png']
 
 
-
     return (
         <div className="container">
                 <div className="home ">
@@ -72,7 +71,6 @@ function Home() {
                                 </div>
                                 <div className="col-3">
                                     <div className="label d-flex">
-
                                         <IconContext.Provider
                                             value={{ color: '#CF013E' }}
                                         >
@@ -82,7 +80,6 @@ function Home() {
                                         </IconContext.Provider>
                                         <span>Code de réservation</span>
                                     </div>
-
                                     <TextField
                                         id="standard-multiline-flexible"
                                         multiline
@@ -99,9 +96,7 @@ function Home() {
                                             value={{ color: '#CF013E' }}
                                         >
                                             <i>
-
                                                 <MdFamilyRestroom />
-
                                             </i>
                                         </IconContext.Provider>
                                         <span>NOM</span>
@@ -129,7 +124,6 @@ function Home() {
                                                 </IconContext.Provider>
                                                 <span>Devise</span>
                                             </div>
-
                                             <TextField
                                                 id="standard-multiline-flexible"
                                                 multiline
@@ -147,7 +141,6 @@ function Home() {
                                                         <MdNavigateNext />
                                                 </IconContext.Provider>
                                         </button>
-
                                     </div>
                                 </div>
                             </div>

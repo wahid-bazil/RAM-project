@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Settings as CarouselSettings } from 'react-slick';
 import { FC } from "react";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import {  MdNavigateNext } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 
@@ -45,7 +45,7 @@ const SliderIdex = () => {
             </button>
         );
     };
-
+    
     const slickSettings: Settings = {
         dots: true,
         infinite: true,
@@ -76,7 +76,6 @@ const SliderIdex = () => {
                     </div>
                 ))}
             </Slider>
-
         </div>
     );
 }

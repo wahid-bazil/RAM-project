@@ -3,3 +3,34 @@
     font-family: 'El Messiri', sans-serif;
     font-weight: bold;
 }
+.description {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/*
+.MuiTextField-root:focus{
+    background-color: #CF0A3D;
+}
+
+.MuiTextField-root .MuiOutlinedInput-input{
+    border: 2px solid #CF0A3D;
+    
+    
+}
+
+.MuiTextField-root  .MuiOutlinedInput-root.Mui .MuiOutlinedInput-input:focus {
+    border-color: #000000;
+    
+  }
+
+.MuiTextField-root .MuiInputLabel-root.Mui:focus {
+    border-color: #000000;
+  }
+
+.MuiTextField-root .MuiOutlinedInput-root.Mui .MuiOutlinedInput-notchedOutline:focus{
+    border-color: #000000;
+    background-color: "purple"
+  }
+*/
