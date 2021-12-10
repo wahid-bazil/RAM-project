@@ -3,7 +3,23 @@
     color: #C20831;
 }
 
+.surclassement .total {
+    border: 1px solid #707070;
+    border-radius: 15px;
+}
+.surclassement .total > div {
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 
+.surclassement .total .label {
+    background-color: #E3E5E8;
+}
+
+.surclassement .total span {
+    color: #C20831;
+}
 
 .surclassement .phase-title {
     font-weight: 700;
@@ -181,21 +197,14 @@
     font-weight: 700;
     margin-left: 15px;
 }
-.phase-3 .total {
-    border: 1px solid #707070;
-    border-radius: 15px;
+
+
+/* phase -4 */
+.phase-4 .payment-logo > div {
+    
 }
-.phase-3 .total > div {
-    padding: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+.phase-4 .payment-logo img {
+    width: 50px;    
 }
 
-.phase-3 .total .label {
-    background-color: #E3E5E8;
-}
-
-.phase-3 .total span {
-    color: #C20831;
-}
 

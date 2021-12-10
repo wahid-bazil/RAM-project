@@ -2,11 +2,6 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import InputAdornment from '@mui/material/InputAdornment';
 import { GiAirplaneDeparture } from 'react-icons/gi';
-import { IconContext } from "react-icons";
-import { StyledEngineProvider } from '@mui/material/styles';
-import { InputBase } from '@mui/material';
-import { NativeSelect } from '@mui/material';
-import { Select } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import * as React from 'react';
 import { CgHashtag } from "react-icons/cg";
@@ -52,7 +47,6 @@ const Phase1 = () => {
                     </div>
                     <div className='mb-3 col-12'>
                         <TextField
-
                             className={classes.root}
                             value={age}
                             onChange={e => setAge(e.target.value)}

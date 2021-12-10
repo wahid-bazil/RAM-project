@@ -33,7 +33,6 @@ const Phase3 = () => {
                             <i><TiStopwatch /></i>
                             <div>
                                 4h 15min
-
                             </div>
                             <div>
                                 Direct
@@ -80,7 +79,7 @@ const Phase3 = () => {
                     </div>
                 </div>
                 <div className='mt-5'>
-                    <div className='phase-title d-flex '>
+                    <div className='phase-title d-flex  '>
                         <i><IoPricetagsOutline /></i>
                         <div className='vl' />
                         <span>
@@ -94,7 +93,6 @@ const Phase3 = () => {
                         <div>
                             6,100.00 <span>MAD</span>
                         </div>
-
                     </div>
                 </div>
             </div>

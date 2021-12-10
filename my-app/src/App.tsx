@@ -10,6 +10,7 @@ import Phase2 from './component/surclassement/pahse_2';
 import Phase1 from './component/surclassement/pahse_1';
 import Phase3 from './component/surclassement/phase_3';
 import Phase4 from './component/surclassement/phase_4';
+import Phase5 from './component/surclassement/phase_5';
 
 
 function App() {
@@ -46,20 +47,15 @@ function App() {
 
 
   return (
-
     <div className="App">
       {/*
       <button onClick={()=>setvl('vl active')}>Click me !</button>
       <div className={vl}>
       </div>
-    */}
-
-      <Phase4/>
-
-
-
+    */} 
+      <Phase3/>
     </div>
   );
-}
+} 
 
 export default App;
