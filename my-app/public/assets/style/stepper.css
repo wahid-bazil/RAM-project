@@ -1,7 +1,28 @@
+.stepper{
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.stepper >div {
+   /*border-bottom: 5px solid #C92549;*/
+   border-radius: 5px;
+  
+}
+.stepper h6 {
+    color:#C92549;
+    font-family: 'Lato', sans-serif;
+}
+.stepper-connecter{
+    position: relative;
+   
+}
 .step-label-icon {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #DFDFDF;
     color: #918588;
@@ -21,10 +42,11 @@
 }
 
 .step-label-icon i{
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     bottom: 5px;
 }
+/*******  stepper-connecter   *************/
 .stepper-connecter.completed{
     border-color: #C20831;
 }
@@ -37,20 +59,10 @@
     
 }
 
-.stepper{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-}
-.stepper-connecter{
-    position: relative;
-   
-}
+
 
 @media screen and (max-width:768px) {
-    .stepper > div {
-        display:flex;
-    }
+
     .stepper-connecter{
         width: 40px;
         height: 5px;
@@ -65,18 +77,27 @@
 @media screen and (min-width:769px) {
     .stepper  {
         flex-direction: column;
+        width: max-content;
+        
     }
     .stepper-connecter{
         height: 40px;
         width: 5px;
         border-left: 5px solid #918588 ;
-        left: 25px;
+        display: block;
+        margin: auto;
+        height: 100%;
+        
+        
     }
     .stepper-connecter.active{
-        height: 80px;
         border-image: linear-gradient(45deg, #FFFFFF,#C92549 ) 1;
     }
 }
+
+
+
+/*****************/
 
 
 

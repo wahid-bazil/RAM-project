@@ -9,116 +9,91 @@ import { MdDone } from "react-icons/md";
 import { makeStyles } from '@mui/styles';
 import { IoAirplaneOutline } from 'react-icons/io5';
 import { MdOutlineNavigateNext } from 'react-icons/md';
-import { GiAirplaneDeparture ,GiAirplaneArrival} from 'react-icons/gi';
+import { GiAirplaneDeparture, GiAirplaneArrival } from 'react-icons/gi';
 
 const members = ['Omar Abdellaoui', 'Amina Abdellaoui', 'Ahmed Abdellaoui', 'Mehdi Abdellaoui']
-
+const vols = [1, 2]
 
 const Phase2 = () => {
 
 
-
     return (
         <div className="container surclassement ">
-            <div className="pahse-2 d-flex flex-column p-2">
-                <div className='section '>
-                    <div className='phase-title d-flex '>
-                        <i><MdAirlineSeatReclineExtra /></i>
-                        <div className='vl' />
-                        <span>
-                            Veuillez sélectionner les passagers
-                        </span>
-                    </div>
-                    <div className='d-flex'>
-                        <div className='col-8  d-flex flex-column justify-content-center align-items-start mt-4 '>
+            <div className="pahse-2 row justify-content-between  ">
+                <div className='section col-12 col-md-6 '>
+                    <div>
+                        <div className='phase-title d-flex '>
+                            <i><MdAirlineSeatReclineExtra /></i>
+                            <div className='vl' />
+                            <span>
+                                Veuillez sélectionner les passagers
+                            </span>
+                        </div>
+                        <div className='passagers position-relative d-flex flex-column  mt-4 '>
+                            <img className='' src='.\assets\images\seat.svg' alt='' />
                             {members.map((member, index) => (
-                                <div className='passagers col-12 mb-3 d-flex justify-content-start align-items-center'>
+                                <div className='d-flex col-9 justify-content-start align-items-center'>
                                     <Radio sx={{
                                         color: '#C20831',
                                         '&.Mui-checked': {
                                             color: '#C20831',
                                         },
+                                        "& .MuiSvgIcon-root": {
+                                            height: 18,
+                                            width: 18,
+                                        }
                                     }} checkedIcon={<i><MdDone /></i>} />
                                     <span className=''> {members[index]} </span>
                                 </div>
                             ))}
                         </div>
-                        <div className='col-4 d-flex justify-content-end  align-items-end opacity-2'>
-                            <img src='.\assets\images\seat.svg' alt='' />
-                        </div>
-
                     </div>
                 </div>
-                <div className='section mt-4'>
-                    <div className='phase-title d-flex '>
-                        <i><IoAirplaneOutline /></i>
-                        <div className='vl' />
-                        <span>
-                            Veuillez sélectionner un vol
-                        </span>
-                    </div>
-                    <div className='vols mt-3 '>
-                        <div className='d-flex mb-3'>
-                            <div className='col-2 d-flex align-items-center '>
-                                <Radio sx={{
-                                    color: '#C20831',
-                                    '&.Mui-checked': {
-                                        color: '#C20831',
-                                    },
-                                }}  />
-
-                            </div>
-                            <div className='d-flex flex-column  col-10   '>
-                                <div className='d-flex align-items-center vol-details mb-2'>
-                                    <i>
-                                        <GiAirplaneDeparture />
-                                    </i>
-                                    <span className='vl ' />
-                                    <span>
-                                    Agadir (AGA)
-                                    </span>
-                                </div>
-                                <div className='d-flex align-items-center vol-details'>
-                                    <i>
-                                        <GiAirplaneArrival />
-                                    </i>
-                                    <span className='vl' />
-                                    <span>
-                                    Agadir (AGA)
-                                    </span>
-                                </div>
-                            </div>
+                <div className='section col-12 col-md-6 '>
+                    <div>
+                        <div className='phase-title d-flex '>
+                            <i><IoAirplaneOutline /></i>
+                            <div className='vl' />
+                            <span>
+                                Veuillez sélectionner un vol
+                            </span>
                         </div>
-                        <div className='d-flex mb-2'>
-                            <div className='col-2 d-flex align-items-center '>
-                                <Radio sx={{
-                                    color: '#C20831',
-                                    '&.Mui-checked': {
+                        <div className='vols position-relative d-flex flex-column  mt-3 '>
+                            <img className='' src='.\assets\images\air-plan.png' alt='' />
+                            {vols.map((member, index) => (
+                                <div className='d-flex justify-content-start align-items-center '>
+                                    <Radio sx={{
                                         color: '#C20831',
-                                    },
-                                }} />
-
-                            </div>
-                            <div className='d-flex flex-column  col-10   '>
-                                <div className='d-flex align-items-center vol-details mb-2'>
-                                    <i>
-                                        <GiAirplaneDeparture />
-                                    </i>
-                                    <span className='vl ' />
-                                    <span>
-                                    Agadir (AGA)
-                                    </span>
+                                        '&.Mui-checked': {
+                                            color: '#C20831',
+                                        },
+                                        "& .MuiSvgIcon-root": {
+                                            height: 20,
+                                            width: 20,
+                                        }
+                                    }} />
+                                    <div className='vol-details col-9'>
+                                        <div className='d-flex  align-items-center vol-details mb-2 '>
+                                            <i>
+                                                <GiAirplaneDeparture />
+                                            </i>
+                                            <span className='vl ' />
+                                            <span>
+                                                Agadir (AGA)
+                                            </span>
+                                        </div>
+                                        <div className='d-flex align-items-center vol-details '>
+                                            <i>
+                                                <GiAirplaneArrival />
+                                            </i>
+                                            <span className='vl' />
+                                            <span>
+                                                Casablanca (CMN)
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='d-flex align-items-center vol-details'>
-                                    <i>
-                                        <GiAirplaneArrival />
-                                    </i>
-                                    <span className='vl' />
-                                    <span>
-                                    Agadir (AGA)
-                                    </span>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

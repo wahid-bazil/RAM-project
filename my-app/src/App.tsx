@@ -11,6 +11,9 @@ import Phase1 from './component/surclassement/pahse_1';
 import Phase3 from './component/surclassement/phase_3';
 import Phase4 from './component/surclassement/phase_4';
 import Phase5 from './component/surclassement/phase_5';
+import surclassement from './component/surclassement';
+import Surclassement from './component/surclassement';
+import Header from './component/header'
 
 
 function App() {
@@ -39,23 +42,19 @@ function App() {
     },
   ];
 
-  const onChange = () => {
-
-  }
-
-
-
 
   return (
-    <div className="App">
-      {/*
-      <button onClick={()=>setvl('vl active')}>Click me !</button>
-      <div className={vl}>
+    <div className="App ">
+      <div className='mt-2'>
+        <Header />
       </div>
-    */} 
-      <Phase3/>
+      <div className='mt-4'>
+        <Surclassement />
+      </div>
+
+
     </div>
   );
-} 
+}
 
 export default App;

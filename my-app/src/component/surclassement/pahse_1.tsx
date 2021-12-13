@@ -38,108 +38,96 @@ const Phase1 = () => {
     const [age, setAge] = React.useState("");
     const classes = useStyles();
     return (
-        <div className='container surclassement phase-1'>
+        <div className='container surclassement '>
             <div className="phase-1">
-                <div className="d-flex flex-column p-3 mt-5">
-                    <div className='phase-title description text-start mb-4 '>
-                        Saisissez votre aéroport de départ, votre code
-                        de réservation et votre nom
-                    </div>
-                    <div className='mb-3 col-12'>
-                        <TextField
-                            className={classes.root}
-                            value={age}
-                            onChange={e => setAge(e.target.value)}
-                            variant="outlined"
-                            label="Air report"
-                            select
-                            InputProps={{
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <i><GiAirplaneDeparture /></i>
+                <h6 className=' '>
+                    Saisissez votre aéroport de départ, votre code
+                    de réservation et votre nom
+                </h6>
+                <form>
+                    <TextField
+                        className={classes.root}
+                        value={age}
+                        onChange={e => setAge(e.target.value)}
+                        variant="outlined"
+                        label="Air report"
+                        select
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <i><GiAirplaneDeparture /></i>
+                                </InputAdornment>
+                            ),
+                        }}
+                    >
+                        <MenuItem value="">
+                            <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </TextField>
+                    <TextField
+                        className={classes.root}
+                        value={age}
+                        onChange={e => setAge(e.target.value)}
+                        variant="outlined"
+                        label="code de reservation"
 
-                                    </InputAdornment>
-                                ),
-                            }}
-                        >
-                            <MenuItem value="">
-                                <em>None</em>
-                            </MenuItem>
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                        </TextField>
-                    </div>
-                    <div className='mb-3 col-12'>
-                        <TextField
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <i><CgHashtag /></i>
 
-                            className={classes.root}
-                            value={age}
-                            onChange={e => setAge(e.target.value)}
-                            variant="outlined"
-                            label="code de reservation"
+                                </InputAdornment>
+                            ),
+                        }}
+                    >
+                        <MenuItem value="">
+                            <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </TextField>
+                    <TextField
+                        className={classes.root}
+                        value={age}
+                        onChange={e => setAge(e.target.value)}
+                        variant="outlined"
+                        label="nom de famille"
 
-                            InputProps={{
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <i><CgHashtag /></i>
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <i><MdFamilyRestroom /></i>
 
-                                    </InputAdornment>
-                                ),
-                            }}
-                        >
-                            <MenuItem value="">
-                                <em>None</em>
-                            </MenuItem>
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                        </TextField>
-
-                    </div>
-                    <div className='col-12'>
-                        <TextField
-                            className={classes.root}
-                            value={age}
-                            onChange={e => setAge(e.target.value)}
-                            variant="outlined"
-                            label="nom de famille"
-
-                            InputProps={{
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <i><MdFamilyRestroom /></i>
-
-                                    </InputAdornment>
-                                ),
-                            }}
-                        >
-                            <MenuItem value="">
-                                <em>None</em>
-                            </MenuItem>
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                        </TextField>
-
-                    </div>
-
-                </div>
-                <div className='description-container p-3 mt-4 '>
-                    <div className='description d-flex flex-column '>
-                        <div className='title text-start   '>
-                            CLASSE BUISNISS
+                                </InputAdornment>
+                            ),
+                        }}
+                    >
+                        <MenuItem value="">
+                            <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </TextField>
+                </form>
+                <div className='description position-relative d-flex mt-4 '>
+                    <img className='col-md-5 col-12 p-0 ' src='./assets/images/description.png' />
+                    <div>
+                        <div className='description-text col-md-7 col-12 p-0 '>
+                            <h4 className='title'>
+                                CLASSE BUISNISS
+                            </h4>
+                            <p>
+                                Voyagez avec Buisniss Class avec Royal Air Maroc et découverez nos nouveaux standard de confort a bord : cabine plus spacieuse.<br /> <br />Programmes de divertissement individuels, sièges en cuirs, restauration savoureuse et versée faites l’expérience d’un voyage alliant confort,  plaisir et sérénité.
+                            </p>
                         </div>
-                        <div className=' text-start '>
-                            Voyagez avec Buisniss Class avec Royal Air Maroc et découverez nos nouveaux standard de confort a bord : cabine plus spacieuse.<br /> <br />Programmes de divertissement individuels, sièges en cuirs, restauration savoureuse et versée faites l’expérience d’un voyage alliant confort,  plaisir et sérénité.
-                        </div>
-
                     </div>
-
                 </div>
             </div>
-
-
         </div>
 
     );
