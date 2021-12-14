@@ -1,10 +1,20 @@
-.MuiTextField-root i{
-    font-size: 25px;
-    color: #C20831;
+
+.surclassement .title-container  {
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
 }
-.surclassement{
-    
+
+.surclassement .title-container h3 {
+    position: relative;
+    top:8px;
 }
+
+
+
+
+
 
 .surclassement .total {
     border: 1px solid #707070;
@@ -59,13 +69,7 @@
     color: #C20831;
 }
 
-.surclassement .title h3 {
-    border-bottom: 3px solid #C20831;
-    background-color: #FFFFFF;
-    padding: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
-}
+
 /* phase ---- 1 */
 .phase-1 h6 {
    text-align: center;
@@ -312,4 +316,62 @@
     width: 50px;    
 }
 
+.surclassement .phases {
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 5px;
+}
 
+/**** stepper-mobile ***/
+.surclassement .stepper-mobile {
+    border-bottom: 3.5px solid #C20831;
+    border-radius:3px;
+}
+.surclassement .stepper-mobile h6 {
+    margin-top: 15px;
+    color:#C20831;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+}
+.connecter{
+    display: none;
+}
+
+@media screen and (max-width: 798px) {
+    .phases.large-device{
+        display: none;
+    }
+}
+@media screen and (min-width: 799px) {
+    .phases.small-device{
+        display: none;
+    }
+}.surclassement .phases {
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.surclassement .stepper-mobile {
+    border-bottom: 3.5px solid #C20831;
+    border-radius:3px;
+}
+.surclassement .stepper-mobile h6 {
+    margin-top: 15px;
+    color:#C20831;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+}
+.connecter{
+    display: none;
+}
+
+@media screen and (max-width: 798px) {
+    .phases.large-device{
+        display: none;
+    }
+}
+@media screen and (min-width: 799px) {
+    .phases.small-device{
+        display: none;
+    }
+}

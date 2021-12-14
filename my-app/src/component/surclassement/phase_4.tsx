@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 const Phase4 = () => {
     const classes = useStyles();
     return (
-        <div className="container surclassement ">
+        <div className=" ">
             <div className='phase-4 mt-5'>
                 <div className='phase-title d-flex '>
                     <i><MdPayment /></i>

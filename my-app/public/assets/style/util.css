@@ -36,6 +36,10 @@
     padding: 15px;
 }
 
+.MuiTextField-root i{
+    font-size: 25px;
+    color: #C20831;
+}
 
 /*
 .MuiTextField-root:focus{

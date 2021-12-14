@@ -18,9 +18,9 @@ const Phase2 = () => {
 
 
     return (
-        <div className="container surclassement ">
+        <div className="  ">
             <div className="pahse-2 row justify-content-between  ">
-                <div className='section col-12 col-md-6 '>
+                <div className='section col-12 col-md-6  '>
                     <div>
                         <div className='phase-title d-flex '>
                             <i><MdAirlineSeatReclineExtra /></i>

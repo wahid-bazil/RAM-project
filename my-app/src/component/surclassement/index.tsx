@@ -49,8 +49,8 @@ const useStyles = makeStyles({
 });
 const Surclassement = () => {
     const classes = useStyles();
-    const [currentStep, setCurrentStep] = React.useState(2);
-  
+    const [currentStep, setCurrentStep] = React.useState(0);
+
     const [stepState, setStepState] = React.useState<{ [index: number]: boolean }>({
         0: true,
         1: false,
@@ -81,39 +81,55 @@ const Surclassement = () => {
         }));
     }
     return (
-        <div>
-            <div className=" container  surclassement  position-relative  ">
-                <div className="phases offset-1 ">
-                    <div className="title pl-5 pr-5">
-                        <h3>
-                            SURCLASSEMENT
-                        </h3>
-                    </div>
-                    {steps.map((step, index) => (
-                        <div key={index} className=''>
-                            <div className='stepper-0 '>
+        <div className="container surclassement position-relative">
+            <div className="title-container title d-flex align-items-center justify-content-center">
+                <h3>
+                    SURCLASSEMENT
+                </h3>
+            </div>
+            <div className="phases small-device">
+                <div className="stepper-mobile">
+                    <div className="d-flex justify-content-between">
+                        {steps.map((step, index) => (
+                            <div>
                                 <IconLabel icon={icons[index]} active={currentStep == index} completed={currentStep > index} />
-                                <Connecteur active={currentStep == index} completed={currentStep > index} />
                             </div>
-                            <div className='pl-5 pr-5 '>
-                                <Accordion className={classes.root} id={String(index)} expanded={stepState[index]} onChange={(e) => onchange(e.currentTarget.id)}>
-
-                                    <AccordionSummary
-                                        expandIcon={currentStep >= index ? <MdExpandMore /> : null}
-                                        aria-controls="panel1bh-content"
-                                        id={String(index)}
-                                    >
-                                        <h6 className={currentStep >= index ? 'active' : ''}>{step.description}</h6>
-                                    </AccordionSummary>
-
-                                    <div className="p-3 bg-white">
-                                        {currentStep >= index ? phases[index] : null}
-                                    </div>
-                                </Accordion>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+                    <h6>{steps[currentStep].description}</h6>
                 </div>
+                <div className="mt-4">
+                    {
+                        phases[currentStep]
+                    }
+                </div>
+            </div>
+            <div className="phases large-device">
+                {steps.map((step, index) => (
+                    <div key={index} className=''>
+                        <div className='stepper-0 '>
+                            <IconLabel icon={icons[index]} active={currentStep == index} completed={currentStep > index} />
+                            <Connecteur active={currentStep == index} completed={currentStep > index} />
+                        </div>
+                        <div className='pl-5 pr-5 '>
+                            <Accordion className={classes.root} id={String(index)} expanded={stepState[index]} onChange={(e) => onchange(e.currentTarget.id)}>
+
+                                <AccordionSummary
+                                    expandIcon={currentStep >= index ? <MdExpandMore /> : null}
+                                    aria-controls="panel1bh-content"
+                                    id={String(index)}
+                                >
+                                    <h6 className={currentStep >= index ? 'active' : ''}>{step.description}</h6>
+                                </AccordionSummary>
+
+                                <div className="p-3 bg-white">
+                                    {currentStep >= index ? phases[index] : null}
+                                </div>
+                            </Accordion>
+                        </div>
+                    </div>
+                ))}
+
             </div>
         </div>
     )

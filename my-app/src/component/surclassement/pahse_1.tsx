@@ -38,7 +38,7 @@ const Phase1 = () => {
     const [age, setAge] = React.useState("");
     const classes = useStyles();
     return (
-        <div className='container surclassement '>
+        <div className='  '>
             <div className="phase-1">
                 <h6 className=' '>
                     Saisissez votre aéroport de départ, votre code

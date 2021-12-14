@@ -17,26 +17,41 @@ header {
 .logo .one-world {
     margin-left: 20px;
 }
-.logo .ram img {
-    width: 110px;
+@media screen and (max-width: 798px) {
+    .logo .ram img {
+        width: 80px;
+    }
+    .logo .one-world img {
+        width: 25px;
+    }
+    
 }
-.logo .one-world img {
-    width: 42px;
+@media screen and (min-width: 799px) {
+    .logo .ram img {
+        width: 110px;
+    }
+    .logo .one-world img {
+        width: 42px;
+    }
+    
+    
 }
+
+
 
 /*****************************/
 /*************Menu***********/
-header .menu {
+header .menu-large-device {
     position: relative;
     top: 7px;
 }
 
-header .menu ul {
+header .menu-large-device ul {
     height: 100%;
     justify-content: space-between;
 } 
 
-header .menu ul li  {
+header .menu-large-device ul li  {
     display:block;
     float:left;
     color: black;
@@ -52,7 +67,7 @@ header .menu ul li  {
     
     }
 
-header .menu-title  {
+header .menu-large-device-title  {
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     border-bottom: 2.5px solid #D5123A;
@@ -60,23 +75,35 @@ header .menu-title  {
     position: relative;
     top: 8px;
 }
-header .menu ul li h6 {
+header .menu-large-device ul li h6 {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     font-size: 12.5px;
 }
 
-header .menu ul li i {
-    color: #FAE9E9;
-    border: 1px solid #FAE9E9;
-    border-radius: 5px;
-    padding:3px 5px;
-    font-size: 15px;
+header .menu-large-device ul li i {
+   
 }
 
-header .menu .select-icon img {
-   width: 20px;
+header .menu-large-device .select-icon img {
+   width: 15px;
    
+}
+
+.menu-large-device-item i img {
+    width: 15px
+}
+.menu-large-device-item span {
+    font-size: 12px;
+}
+.MuiSelect-select span {
+    font-size: 10px;
+}
+.MuiSelect-select i img {
+    width: 17px;
+}
+.MuiSelect-select {
+    padding: 0px;
 }
 /*******************************/
 
@@ -86,4 +113,20 @@ header .select {
     height : 30px
 }
 
+/****** menu-mobile *****/
+@media screen and (max-width: 798px) {
+    .menu-large-device {
+        display :none
+    }
+}
+@media screen and (min-width: 799px) {
+    .menu-mobile {
+        display :none
+    }
+}
+.menu-mobile i {
+    position: relative;
+    top: 6px;
+    font-size: 25px;
+}
 

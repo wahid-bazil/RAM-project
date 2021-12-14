@@ -14,19 +14,34 @@ import { GiAirplaneDeparture } from 'react-icons/gi';
 import { CgHashtag } from "react-icons/cg";
 import { MdFamilyRestroom } from "react-icons/md";
 import { BsCurrencyExchange } from "react-icons/bs";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { AiOutlineEuroCircle } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
+import { IconButton } from '@mui/material';
 
 
 
 const useStyles = makeStyles({
     root: {
-        backgroundColor: "white",
+        backgroundColor: "dark",
+        width: '90px',
+        height: '30px',
+        fontSize: "5px",
         padding: '0px',
-        "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-            border: 'none',
-            boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+        boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+        "& .MuiOutlinedInput-notchedOutline": {
+            border: "none",
+            fontSize: "5px",
+            backgroundColor: "dark",
             padding: '0px',
-        },
-    }
+        }
+
+
+    },
+
+
+
+
 });
 
 
@@ -45,62 +60,52 @@ function Header() {
                         <img src={image[1]} />
                     </div>
                 </div>
-                <div className="menu ">
+                <div className="menu-large-device">
                     <ul>
                         <li className="menu-title d-flex align-items-center">
                             <h6>Surclassement Dernière minute</h6>
                         </li>
                         <li className="d-flex align-items-center">
-                            <TextField
-                                size="small"
-                                className={classes.root}
+                            <Select
                                 variant="outlined"
-                                select
-                                InputProps={{
-                                    startAdornment: (
-                                        <InputAdornment position="start">
-                                            <i ><BsCurrencyExchange /></i>
-                                        </InputAdornment>
-                                    ),
-                                }}
-                            >
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
-                            </TextField>
-                        </li>
-                        <li className="d-flex align-items-center">
-                            <TextField
                                 size="small"
                                 className={classes.root}
-
-
-                                select
-                                InputProps={{
-                                    startAdornment: (
-                                        <InputAdornment position="start">
-                                            <div className="select-icon"><img alt='' src="./assets/images/france.png" /></div>
-                                        </InputAdornment>
-                                    ),
-                                }}
+                                inputProps={{ style: { fontSize: 5 } }}
 
                             >
-                                <MenuItem value="">
-                                    <em>None</em>
+                                <MenuItem className="menu-item " value={10} >
+                                    <i><img alt="" src="./assets/images/france.png" /></i><span className="ml-2">FR  </span>
                                 </MenuItem>
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
-                            </TextField>
+                            </Select>
                         </li>
                         <li className="d-flex align-items-center">
-                            <i><FiPhoneCall/></i>
+                            <Select
+                                variant="outlined"
+
+                                size="small"
+                                className={classes.root}
+                            >
+                                <MenuItem className="menu-item " value={10} >
+                                    <i><AiOutlineEuroCircle /></i><span className="ml-2">FR  </span>
+                                </MenuItem>
+
+                            </Select>
                         </li>
                         <li className="d-flex align-items-center">
-                            <i><MdOutlineMail/></i>
+                            <i><FiPhoneCall /></i>
+                        </li>
+                        <li className="d-flex align-items-center">
+                            <i><MdOutlineMail /></i>
                         </li>
 
                     </ul>
+                </div>
+                <div className="menu-mobile ">
+                    <div className="d-flex align-items-center">
+                        <IconButton aria-label="delete">
+                            <i><AiOutlineMenu /></i>
+                        </IconButton>
+                    </div>
                 </div>
             </div>
         </header>

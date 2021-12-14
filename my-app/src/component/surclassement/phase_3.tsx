@@ -8,7 +8,7 @@ const members = ['Omar Abdellaoui', 'Amina Abdellaoui', 'Ahmed Abdellaoui']
 
 const Phase3 = () => {
     return (
-        <div className="container surclassement ">
+        <div className="">
             <div className='phase-3'>
                 <div className='section'>
                     <div className="coordinates d-flex">
