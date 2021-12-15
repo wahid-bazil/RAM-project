@@ -1,0 +1,479 @@
+@import '../variables/variables.scss';
+.surclassement{
+    position: relative;
+    background-image: url("../images/groupe-648.png");
+    .title{
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-top: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family:$font-museo;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: center;
+        color: #d84755;
+        font-weight: 100;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d84755;
+        border-radius: 5px;
+        h3{
+            position: relative;
+            top: 5px;
+        }
+    }
+    .phases{
+        .phase-title {
+            font-family: $font-museo;
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+            top: 7px;
+        }
+        .phase-title.active{
+            color: #C20831;
+            font-size: 20px;
+        }
+        .phase-title {
+            font-weight: 700;
+            font-family: 'Lato', sans-serif;
+        }
+        .phase-title {
+            font-size:13px;
+            color: #8B5571;
+            
+        }
+        .phase-title span {
+            position: relative;
+            top: 10px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700 ;
+        }
+        .phase-title i {
+          font-size: 25px;
+          margin-right: 7px;
+          
+        }
+        .phase-title  .vl {
+          border-left: 2px solid #8B5571;
+          margin-right: 7px;
+        }
+        .large-device > div {
+            margin-bottom: 28px;
+            position: relative;
+
+            
+            
+            .phase-label{
+                span{
+                    border-bottom:5px solid #FFFFFF;
+                    width: 100%;
+                    margin-left: 30px;
+                    position: relative;
+                    top: 15px;
+                    height: 5px;
+                    border-radius: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+            }
+        }
+        .phase-container{
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+            opacity: 1;
+            height: 0px; 
+
+            position: relative;      
+        }
+        .phase-container.expanded{
+            padding: 15px;
+            height:100%;
+            -webkit-transition: all 0.25s ease-in-out;
+            -moz-transition: all 0.26s ease-in-out;
+            -o-transition: all 0.26s ease-in-out;
+            transition: all 0.25s ease-in-out;      
+        }
+        .phase-container.expanded > div {
+            opacity: 1;
+            -webkit-transition: opacity 0.25s ease-in-out;
+            -moz-transition: opacity 0.26s ease-in-out;
+            -o-transition: opacity 0.26s ease-in-out;
+            transition: opacity 0.25s ease-in-out;  
+            height: 100%;
+        }
+        .phase-container > div {
+            opacity: 0;
+            height: 100%;
+           
+        }
+        .small-device{
+            .stepper-mobile{
+
+                border-bottom: 5px solid;
+                border-color: #e71946;
+
+                h6{
+                    font-family: $font-museo;
+                    font-weight: normal;
+                    text-align: center;
+                    color: #c20831;
+                    margin-top: 10px;
+                }
+                
+            }
+        }
+        .large-device{
+            @media screen and (min-width: 1000px) {
+                .stepper-0{
+                    left: -75px;
+                }
+                
+    
+            }
+            
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .phases{
+            padding-left: 50px;
+
+        }
+
+    }
+
+    .phase-1 .form-container {
+        background-color: #faecdd;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .phase-1 .form-container h6 {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+       
+    }
+    .phase-1 form {
+        display: flex;
+        margin-top: 25px;
+    }
+    .phase-1 form i {
+        color: #E35D6E;
+        font-size: 25px;
+        border-right: 1px solid #E35D6E;
+        padding-right: 5px;
+    }
+    .phase-1 .description >div{
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+    
+    .phase-1 .description img {
+        width: 100%;
+      
+    }
+    .phase-1 .description h4 {
+        text-align: start;
+    }
+    
+    .phase-1 .description {
+        font-family: 'Lato', sans-serif;
+        h4{
+            color:#8B5571;
+            font-weight: bolder;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    .pahse-2 .passagers img {
+        position: absolute;
+        height: 100px;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+    .pahse-2  .vols img {
+        position: absolute;
+        height: 100px;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+    /*************************************/
+    /**************** Section ***********/
+    .pahse-2 .section > div {
+        background-color: #FCFCFC;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    @media screen and (max-width: 798px) {
+        .pahse-2 .section {
+            margin-bottom: 25px;
+        }
+    }
+    
+    /***********************************/
+    /************ passagers ************/
+    .pahse-2 .passagers > div {
+        margin-bottom: 15px;
+        border: 1px solid #707070;
+        border-radius: 20px;
+    }
+     .pahse-2 .passagers i{
+        background-color: #C20831;
+        font-size: 15px;
+        color: white;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .pahse-2 .passagers span{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700 ;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    /***************************************/
+    /****************** vols **************/
+    .pahse-2 .vols > div  {
+        margin-bottom: 15px;
+        border: 1px solid #707070;
+        border-radius: 5px;
+        padding: 7px;
+    }
+    
+    /*************************************/
+    /************  vol-details ***********/
+    
+    .pahse-2 .vol-details > div{
+        border: 1px solid #707070;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+    }
+    
+    .pahse-2 .vol-details i {
+        font-size: 25px;
+        color :#CF013E
+    }
+    @media screen and (min-width: 800px) {
+        .phase-3 .to {
+            border-left: 1px solid #707070;
+        }
+    }
+    .phase-3{
+        .total {
+            border: 1px solid #707070;
+            border-radius: 15px;
+        }
+        .total > div {
+            padding: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+         .total .label {
+            background-color: #E3E5E8;
+        }
+        
+        .total span {
+            color: #C20831;
+        }
+    }
+    .phase-3 .coordinates {
+        background-color: #FCFCFC;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        padding-bottom: 10px;
+    }
+    .phase-3 .coordinates {
+        font-family: 'Lato', sans-serif;
+    }
+    .phase-3 .coordinates i {
+        font-size: 30px;
+    }
+    .phase-3 .coordinates {
+        font-size: 12px;
+    }
+    .phase-3 .coordinates .line {
+        height: 1px;
+        border-top: 1px solid #707070;;
+        width: 30%;
+    }
+    
+    
+    .phase-3 .coordinates .center i {
+        
+        color: #707070;
+    }
+    .phase-3 .coordinates .left i {
+        color:#C47E2C
+    }
+    .phase-3 .coordinates .right i {
+        color:#C47E2C
+    }
+    .phase-3 .hour {
+        font-size: 13px;
+    }
+    .phase-3 .place {
+        font-size: 10px;
+    }
+    .phase-3 .date {
+        font-size: 9px;
+        color:#C47E2C
+    }
+    .phase-3 .passagers > div {
+        border: 1px solid #707070;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding: 5px;
+        
+    }
+    .phase-3 .passagers > div i {
+        font-size: 20px;
+        position: relative;
+        bottom: 5px;
+        
+    }
+    .phase-3 .passagers > div span {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+}
+
+
+/* responsive*/
+@media screen and (max-width: 280px) {
+    .surclassement{
+        .title {
+            h3{
+                font-size: 15px;
+            }
+        }
+        .phases{
+            .small-device{
+                background-color: white;
+                .stepper-mobile{
+                    h6{
+                       font-size:13px;
+                    }
+                }
+            }
+            .phase-1 {
+                padding-left: 5px;
+                padding-right: 5px;
+                .form-container h6 {
+                    font-size: 10px;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (min-width:280px) and (max-width:340px) {
+    .surclassement{
+        .title {
+            h3{
+                font-size: 15px;
+            }
+        }
+        .phases{
+            .small-device{
+                background-color: white;
+                .stepper-mobile{
+                    h6{
+                       font-size:13px;
+                    }
+                }
+            }
+            .phase-1 {
+
+                .form-container h6 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:340px) and (max-width:430px) {
+    .surclassement{
+        .title {
+            h3{
+                font-size: 16px;
+            }
+        }
+        .phases{
+            .small-device{
+                background-color: white;
+                .stepper-mobile{
+                    h6{
+                       font-size:14px;
+                    }
+                }
+            }
+            .phase-1 {
+                .form-container h6 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:430px) and (max-width:1000px) {
+    .surclassement{
+        .title {
+            h3{
+                font-size: 17px;
+            }
+        }
+        .phases{
+            .small-device{
+                background-color: white;
+                .stepper-mobile{
+                    h6{
+                       font-size:15px;
+                    }
+                }
+            }
+            .phase-1 {
+             
+                .form-container h6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .surclassement{
+        .phases{
+            padding-left: 8px;
+            padding-right: 8px;
+            background-color: white;
+        }
+    }
+}
+@media screen and (min-width:1000px) and (max-width:2000px) {
+    .surclassement{
+        .title {
+            h3{
+                font-size: 25px;
+            }
+        }
+
+    }
+}
+

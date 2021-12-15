@@ -14,7 +14,7 @@ import Phase5 from './component/surclassement/phase_5';
 import surclassement from './component/surclassement';
 import Surclassement from './component/surclassement';
 import Header from './component/header'
-
+import Accordions from './component/accordion/index';
 
 function App() {
   const [activeStep, setactiveStep] = React.useState(0);
@@ -44,13 +44,14 @@ function App() {
 
 
   return (
-    <div className="App ">
+    <div className="App">
       <div className='mt-2'>
-        <Header />
+        <Header/>
       </div>
-      <div className='mt-4'>
+      <div className=''>
         <Surclassement />
       </div>
+
 
 
     </div>

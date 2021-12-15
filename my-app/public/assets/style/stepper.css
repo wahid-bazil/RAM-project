@@ -1,130 +1,186 @@
-.stepper{
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
+.stepper-connecter {
+  position: relative;
 }
 
-.stepper >div {
-   /*border-bottom: 5px solid #C92549;*/
-   border-radius: 5px;
-  
-}
-.stepper h6 {
-    color:#C92549;
-    font-family: 'Lato', sans-serif;
-}
-.stepper-connecter{
-    position: relative;
-   
-}
 .step-label-icon {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #DFDFDF;
-    color: #918588;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #DFDFDF;
+  color: #918588;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.step-label-icon.active{
-    background-color: white;
-    color: #C20831;
+.step-label-icon.active {
+  background-color: white;
+  color: #d84755;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-bottom: 5px;
 }
 
-.step-label-icon.completed{
-    background-color: #C20831;
-    color: white;
+.step-label-icon.completed {
+  background-color: #C20831;
+  color: white;
 }
 
-.step-label-icon i{
-    font-size: 30px;
-    position: relative;
-    bottom: 5px;
+.step-label-icon i {
+  position: relative;
 }
+
 /*******  stepper-connecter   *************/
-.stepper-connecter.completed{
-    border-color: #C20831;
+.stepper-connecter.completed {
+  border-color: #C20831;
 }
 
-.stepper-connecter.active{
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    
+.stepper-connecter.active {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-
-
-@media screen and (max-width:768px) {
-
-    .stepper-connecter{
-        width: 40px;
-        height: 5px;
-        border-top: 5px solid #918588  ;  
-        top: 25px;
-    }
-    .stepper-connecter.active {
-        border-image: linear-gradient(45deg,#C92549, #FFFFFF) 1;
-    }
+@media screen and (max-width: 768px) {
+  .stepper-connecter {
+    width: 40px;
+    height: 5px;
+    border-top: 5px solid #918588;
+    top: 25px;
+  }
+  .stepper-connecter.active {
+    -o-border-image: linear-gradient(45deg, #C92549, #FFFFFF) 1;
+       border-image: linear-gradient(45deg, #C92549, #FFFFFF) 1;
+  }
 }
 
-@media screen and (min-width:769px) {
-    .stepper  {
-        flex-direction: column;
-        width: max-content;
-        
-    }
-    .stepper-connecter{
-        height: 40px;
-        width: 5px;
-        border-left: 5px solid #918588 ;
-        display: block;
-        margin: auto;
-        height: 100%;
-        
-        
-    }
-    .stepper-connecter.active{
-        border-image: linear-gradient(45deg, #FFFFFF,#C92549 ) 1;
-    }
+@media screen and (min-width: 769px) {
+  .stepper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .stepper-connecter {
+    height: 40px;
+    width: 5px;
+    border-left: 5px solid #918588;
+    display: block;
+    margin: auto;
+    height: 100%;
+  }
+  .stepper-connecter.active {
+    -o-border-image: linear-gradient(45deg, #FFFFFF, #C92549) 1;
+       border-image: linear-gradient(45deg, #FFFFFF, #C92549) 1;
+  }
 }
-
-
 
 /*****************/
+@media screen and (max-width: 280px) {
+  .stepper-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+  }
+  .stepper-mobile h6 {
+    font-size: 10px;
+  }
+  .step-label-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .step-label-icon i {
+    font-size: 15px;
+    bottom: 2px;
+  }
+}
 
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .stepper-mobile {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+  }
+  .stepper-mobile h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .step-label-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .step-label-icon i {
+    font-size: 20px;
+    bottom: 3px;
+  }
+}
 
+@media screen and (min-width: 340px) and (max-width: 430px) {
+  .stepper-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .stepper-mobile h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .step-label-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .step-label-icon i {
+    font-size: 20px;
+    bottom: 4px;
+  }
+}
 
+@media screen and (min-width: 430px) and (max-width: 1000px) {
+  .stepper-mobile {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 22px;
+  }
+  .stepper-mobile h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .step-label-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .step-label-icon i {
+    font-size: 23px;
+    bottom: 3px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1000px) and (max-width: 2000px) {
+  .stepper-mobile {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 22px;
+  }
+  .stepper-mobile h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .step-label-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .step-label-icon i {
+    font-size: 30px;
+    bottom: 5px;
+  }
+}
+/*# sourceMappingURL=stepper.css.map */

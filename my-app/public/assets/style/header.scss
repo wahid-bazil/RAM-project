@@ -1,0 +1,121 @@
+@import "../variables/variables.scss";
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;       
+    .logo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .ram {
+            border-right:1px solid #b9b4b4 ;
+        
+        }
+        .one-world {
+            margin-left: 20px;
+        }
+    }
+    .menu-large-device{
+        height: 100%;
+        align-items: center;
+        padding-right:15px;
+
+        li{
+            margin-left: 25px;
+           
+        }
+        li.menu-title{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            h6{
+              font-family: $font-lato;
+              font-weight: 700;
+              font-size: 15px;
+              position: relative;
+              top: 5px;
+            }
+            .hl{
+                border-bottom: 2.5px solid #d84755;
+                border-radius: 5px;
+                width: 100%;
+                position: relative;
+                top: 27px;
+                border-radius: 5px;
+            }
+
+        }
+        li.phone-icon{
+            border: 1px solid #d4525f;
+            padding: 2.5px 5px;
+            border-radius: 8px;
+            box-shadow: rgba(221, 132, 132, 0.24) 0px 3px 8px;
+          i{
+              font-size: 18px;
+              color:#d4525f
+            }
+        }
+        li.email-icon{
+            border: 1px solid #d4525f;
+            padding: 2.5px 5px;
+            border-radius: 8px;
+            box-shadow: rgba(214, 136, 136, 0.24) 0px 3px 8px;
+            position: relative;
+            right: 15px;
+            i{
+                font-size: 18px;
+                color:#d4525f
+            }
+        }
+
+    }
+   
+}
+
+/**********Responsive/*********/
+
+@media screen and (max-width: 1000px) {
+    header {
+        .logo{
+            .ram img{
+              width: 60px;
+            }
+            .one-world img {
+                width: 25px;
+            }
+        }
+        .menu.small-device{
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        .logo{
+            .ram img{
+                width: 110px;
+            }
+            .one-world img {
+                width: 42px;
+            }
+        }
+        .menu.small-device{
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+
+

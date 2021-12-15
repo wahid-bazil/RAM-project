@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.accordion h6 {
+  color: #767676;
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  top: 7px;
+  text-align: start;
+}
+
+.accordion h6.completed {
+  color: #C20831;
+}
+
+.accordion h6.active {
+  color: #C20831;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.accordion span {
+  border-bottom: 5px solid;
+  width: 70%;
+  height: 5px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 2px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.accordion span.active {
+  color: #FFFFFF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-color: #FFFFFF;
+}
+
+.accordion span.completed {
+  color: #FFFFFF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-color: #FFFFFF;
+}
+
+.accordion i {
+  background-color: white;
+  border-radius: 50%;
+  color: #aaa;
+  height: auto;
+  padding: 1px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: none;
+}
+
+.accordion i.completed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 1px;
+}
+/*# sourceMappingURL=accordion.css.map */

@@ -19,8 +19,6 @@ import { AiOutlineEuroCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IconButton } from '@mui/material';
 
-
-
 const useStyles = makeStyles({
     root: {
         backgroundColor: "dark",
@@ -39,20 +37,15 @@ const useStyles = makeStyles({
 
     },
 
-
-
-
 });
-
-
 
 function Header() {
     const image = ['./assets/images/logo.png', './assets/images/oneworld-logo.png']
     const classes = useStyles();
     return (
-        <header className="container " >
-            <div className="d-flex justify-content-between">
-                <div className="logo row justify-content-start align-items-center">
+        <header className="">
+            <div className="d-flex justify-content-between align-items-center position-relative  p-0  ">
+                <div className="logo ">
                     <div className="ram">
                         <img src={image[0]} />
                     </div>
@@ -60,10 +53,11 @@ function Header() {
                         <img src={image[1]} />
                     </div>
                 </div>
-                <div className="menu-large-device">
-                    <ul>
-                        <li className="menu-title d-flex align-items-center">
-                            <h6>Surclassement Dernière minute</h6>
+                <div className="menu-large-device ">
+                    <div className="d-flex  align-items-center">
+                        <li className="menu-title ">
+                            <h6 >Surclassement Dernière minute</h6>
+                            <div className="hl" />
                         </li>
                         <li className="d-flex align-items-center">
                             <Select
@@ -71,36 +65,32 @@ function Header() {
                                 size="small"
                                 className={classes.root}
                                 inputProps={{ style: { fontSize: 5 } }}
-
                             >
                                 <MenuItem className="menu-item " value={10} >
-                                    <i><img alt="" src="./assets/images/france.png" /></i><span className="ml-2">FR  </span>
+                                    <i className="image-france"><img alt="" src="./assets/images/france.png" /></i><span className="selectt  ml-2">FR  </span>
                                 </MenuItem>
                             </Select>
                         </li>
                         <li className="d-flex align-items-center">
                             <Select
                                 variant="outlined"
-
                                 size="small"
                                 className={classes.root}
                             >
                                 <MenuItem className="menu-item " value={10} >
-                                    <i><AiOutlineEuroCircle /></i><span className="ml-2">FR  </span>
+                                    <i><AiOutlineEuroCircle /></i><span className="selectt ml-2">FR  </span>
                                 </MenuItem>
-
                             </Select>
                         </li>
-                        <li className="d-flex align-items-center">
-                            <i><FiPhoneCall /></i>
+                        <li className="phone-icon d-flex align-items-center">
+                            <i ><FiPhoneCall /></i>
                         </li>
-                        <li className="d-flex align-items-center">
-                            <i><MdOutlineMail /></i>
+                        <li className="email-icon d-flex align-items-center">
+                            <i ><MdOutlineMail /></i>
                         </li>
-
-                    </ul>
+                    </div>
                 </div>
-                <div className="menu-mobile ">
+                <div className="menu small-device">
                     <div className="d-flex align-items-center">
                         <IconButton aria-label="delete">
                             <i><AiOutlineMenu /></i>

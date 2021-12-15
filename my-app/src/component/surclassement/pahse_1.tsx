@@ -7,16 +7,25 @@ import * as React from 'react';
 import { CgHashtag } from "react-icons/cg";
 import { MdFamilyRestroom } from "react-icons/md";
 
-const image = ['./assets/images/description.png']
+const image = ['./assets/images/descriptio.png']
 
 const useStyles = makeStyles({
     root: {
         width: '100%',
+        color:"white",
         "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#C20831",
-            borderRadius: "8px"
+            borderColor: "#D66B79",
+            borderRadius: "5px",
+            Color:'white',
+            border: '0.5px solid '
         },
-
+        ".MuiTextField-root":{
+            backgroundColor: 'black',
+        },
+        "& .MuiInputBase-root ":{
+            backgroundColor:'white'
+        },
+        
         "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
             borderColor: "#C20831"
         },
@@ -38,87 +47,86 @@ const Phase1 = () => {
     const [age, setAge] = React.useState("");
     const classes = useStyles();
     return (
-        <div className='  '>
-            <div className="phase-1">
-                <h6 className=' '>
-                    Saisissez votre aéroport de départ, votre code
-                    de réservation et votre nom
-                </h6>
-                <form>
-                    <TextField
-                        className={classes.root}
-                        value={age}
-                        onChange={e => setAge(e.target.value)}
-                        variant="outlined"
-                        label="Air report"
-                        select
-                        InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <i><GiAirplaneDeparture /></i>
-                                </InputAdornment>
-                            ),
-                        }}
-                    >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                    </TextField>
-                    <TextField
-                        className={classes.root}
-                        value={age}
-                        onChange={e => setAge(e.target.value)}
-                        variant="outlined"
-                        label="code de reservation"
+        <div>
+            <div className="phase-1  ">
+                <div className='form-container '>
+                    <h6>
+                        Saisissez votre aéroport de départ, votre code
+                        de réservation et votre nom
+                    </h6>
+                    <form>
+                        <TextField
+                            className={classes.root}
+                            value={age}
+                            onChange={e => setAge(e.target.value)}
+                            variant="outlined"
+                            label="Air report"
+                            select
+                            InputProps={{
+                                startAdornment: (
+                                    <InputAdornment position="start">
+                                        <i className='form-icon'><GiAirplaneDeparture /></i>
+                                    </InputAdornment>
+                                ),
+                            }}
+                        >
+                            <MenuItem value="">
+                                <em>None</em>
+                            </MenuItem>
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                        </TextField>
+                        <TextField
+                            className={classes.root}
+                            value={age}
+                            onChange={e => setAge(e.target.value)}
+                            variant="outlined"
+                            label="code de reservation"
+                            InputProps={{
+                                startAdornment: (
+                                    <InputAdornment position="start">
+                                        <i><CgHashtag /></i>
+                                    </InputAdornment>
+                                ),
+                            }}
+                        >
+                            <MenuItem value="">
+                                <em>None</em>
+                            </MenuItem>
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                        </TextField>
+                        <TextField
+                            className={classes.root}
+                            value={age}
+                            onChange={e => setAge(e.target.value)}
+                            variant="outlined"
+                            label="nom de famille"
+                            InputProps={{
+                                startAdornment: (
+                                    <InputAdornment position="start">
+                                        <i><MdFamilyRestroom /></i>
 
-                        InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <i><CgHashtag /></i>
-
-                                </InputAdornment>
-                            ),
-                        }}
-                    >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                    </TextField>
-                    <TextField
-                        className={classes.root}
-                        value={age}
-                        onChange={e => setAge(e.target.value)}
-                        variant="outlined"
-                        label="nom de famille"
-
-                        InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <i><MdFamilyRestroom /></i>
-
-                                </InputAdornment>
-                            ),
-                        }}
-                    >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                    </TextField>
-                </form>
+                                    </InputAdornment>
+                                ),
+                            }}
+                        >
+                            <MenuItem value="">
+                                <em>None</em>
+                            </MenuItem>
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                        </TextField>
+                    </form>
+                </div>
                 <div className='description position-relative d-flex mt-4 '>
-                    <img className='col-md-5 col-12 p-0 ' src='./assets/images/description.png' />
+                    <img className='col-md-4 col-12 p-0 ' src='./assets/images/description.png' />
                     <div>
-                        <div className='description-text col-md-7 col-12 p-0 '>
-                            <h4 className='title'>
+                        <div className=''>
+                            <h4 className=''>
                                 CLASSE BUISNISS
                             </h4>
                             <p>

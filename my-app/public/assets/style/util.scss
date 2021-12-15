@@ -1,0 +1,116 @@
+@media screen and (max-width: 1000px) {
+    .phases{
+        .large-device{
+            display: none;
+        }
+    }
+}
+
+
+ @media screen and (max-width: 1000px) {
+     .phase-1 form {
+         flex-direction: column;
+     }
+     .phase-1 form > div {
+         margin-bottom: 20px;
+     }
+ }
+ 
+ @media screen and (min-width: 1000px) {
+     .phase-1 form {
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     .phase-1 form > div {
+         margin-bottom: 20px;
+         width: 30%;
+     }
+ }
+
+
+
+ 
+ 
+ 
+ @media screen and (max-width: 1000px) {
+     .phase-1 .description {
+         box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+         border: 1px solid rgba(149, 157, 165, 0.5);
+         border-radius: 8px;
+     }
+     .phase-1 .description img{
+        position: absolute;
+        opacity: 0.1;
+        top: 5px;
+        height: 100%;
+        right: 3px;
+     }
+ }
+ @media screen and (min-width: 1000px) {
+     .phase-1 .description .description-text  {
+         flex: 1;
+     }
+     .phase-1 .description img{
+         flex: 1;
+     }
+ }
+ 
+ 
+
+
+@media screen and (min-width: 1000px) {
+    .surclassement{
+        .phases {
+            .small-device{
+                display: none;
+            }
+        }
+    }
+}
+.stepper-0{
+    width: max-content;
+    position:absolute;
+    top: -10px;
+    height: 100%;
+    
+}
+/**** header ****/
+
+@media screen and (max-width: 1000px) {
+    .menu-large-device {
+        display: none
+        
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    .menu.small-device{
+        display :none
+    }
+    .menu-large-device{
+        display: flex;
+    }
+   
+}
+@media screen and (min-width: 1044px) {
+    .App{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+.menu-mobile i {
+    position: relative;
+    top: 6px;
+    font-size: 25px;
+}
+
+
+.image-france img {
+    width: 13px;
+}
+.selectt  {
+    position: relative;
+    top: 2px;
+    font-size: 10px;
+    
+}

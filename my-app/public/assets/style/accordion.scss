@@ -1,0 +1,60 @@
+@import '../variables/variables.scss';
+.accordion{
+    display: flex;
+    margin-top: 50px;
+    h6{
+        color: #767676;
+        font-family: $font-museo;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        top: 7px;
+        text-align: start;
+    }
+    h6.completed{
+        color : #C20831;
+    }
+    h6.active{
+        color : #C20831;
+        transform: scale(1.1);
+    }
+  
+    span{
+        border-bottom: 5px solid ;
+        width:70%;
+        height: 5px;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 2px;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
+    span.active{
+        color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-color: #FFFFFF
+    }
+    span.completed{
+        color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-color: #FFFFFF
+    }
+    i{
+        background-color: white;
+        border-radius: 50%;
+        color: #aaa;
+        height: auto;
+        padding: 1px 8px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        display: none;
+        
+    }
+    i.completed{
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 1px;
+    }
+
+
+}

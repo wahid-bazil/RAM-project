@@ -1,68 +1,119 @@
-.title{
-    color: #CF0A3D;
-    font-family: 'El Messiri', sans-serif;
-    font-weight: bold;
-}
-.description {
-    font-family: 'Lato', sans-serif;
-}
-.visa{
-    position: relative;
-    top: 10px;
+@media screen and (max-width: 1000px) {
+  .phases .large-device {
+    display: none;
+  }
 }
 
-.util-0{
-    position: relative;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+@media screen and (max-width: 1000px) {
+  .phase-1 form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phase-1 form > div {
+    margin-bottom: 20px;
+  }
 }
 
+@media screen and (min-width: 1000px) {
+  .phase-1 form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .phase-1 form > div {
+    margin-bottom: 20px;
+    width: 30%;
+  }
+}
 
-
-
-.stepper-0{
-    width: max-content;
-    position:absolute;
-    top: 0;
-    left:-25px;
+@media screen and (max-width: 1000px) {
+  .phase-1 .description {
+    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    border: 1px solid rgba(149, 157, 165, 0.5);
+    border-radius: 8px;
+  }
+  .phase-1 .description img {
+    position: absolute;
+    opacity: 0.1;
+    top: 5px;
     height: 100%;
-    
-}
-
-
-.surclassement > div {
-    padding: 15px;
-}
-
-.MuiTextField-root i{
-    font-size: 25px;
-    color: #C20831;
-}
-
-/*
-.MuiTextField-root:focus{
-    background-color: #CF0A3D;
-}
-
-.MuiTextField-root .MuiOutlinedInput-input{
-    border: 2px solid #CF0A3D;
-    
-    
-}
-
-.MuiTextField-root  .MuiOutlinedInput-root.Mui .MuiOutlinedInput-input:focus {
-    border-color: #000000;
-    
+    right: 3px;
   }
+}
 
-.MuiTextField-root .MuiInputLabel-root.Mui:focus {
-    border-color: #000000;
+@media screen and (min-width: 1000px) {
+  .phase-1 .description .description-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
+  .phase-1 .description img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 
-.MuiTextField-root .MuiOutlinedInput-root.Mui .MuiOutlinedInput-notchedOutline:focus{
-    border-color: #000000;
-    background-color: "purple"
+@media screen and (min-width: 1000px) {
+  .surclassement .phases .small-device {
+    display: none;
   }
-*/
+}
+
+.stepper-0 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: -10px;
+  height: 100%;
+}
+
+/**** header ****/
+@media screen and (max-width: 1000px) {
+  .menu-large-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu.small-device {
+    display: none;
+  }
+  .menu-large-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .App {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.menu-mobile i {
+  position: relative;
+  top: 6px;
+  font-size: 25px;
+}
+
+.image-france img {
+  width: 13px;
+}
+
+.selectt {
+  position: relative;
+  top: 2px;
+  font-size: 10px;
+}
+/*# sourceMappingURL=util.css.map */
