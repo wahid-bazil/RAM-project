@@ -1,5 +1,6 @@
 .stepper-connecter {
   position: relative;
+  height: 100px;
 }
 
 .step-label-icon {
@@ -70,12 +71,11 @@
     width: max-content;
   }
   .stepper-connecter {
-    height: 40px;
     width: 5px;
     border-left: 5px solid #918588;
     display: block;
     margin: auto;
-    height: 100%;
+    height: 140%;
   }
   .stepper-connecter.active {
     -o-border-image: linear-gradient(45deg, #FFFFFF, #C92549) 1;

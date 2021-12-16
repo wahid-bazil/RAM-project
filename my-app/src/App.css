@@ -1,9 +1,19 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 
-.App {
-  text-align: center;
+
+body{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
   
+}
+.App {
+  /*text-align: center;
+  background-image: url('./img-left-banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x:60px;*/ 
 }
 
 .App-logo {

@@ -57,7 +57,6 @@ const Accordions: React.FC<{expand:(index:number)=>void,  active: boolean, compl
             <i onClick={()=>props.expand(props.index)} className={IconClasse(props.active, props.completed)}>
                 <MdNavigateNext />
             </i>
-
         </div>
     )
 }

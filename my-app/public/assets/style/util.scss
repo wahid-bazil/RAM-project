@@ -1,3 +1,4 @@
+@import '../variables/variables.scss';
 @media screen and (max-width: 1000px) {
     .phases{
         .large-device{
@@ -70,7 +71,7 @@
 .stepper-0{
     width: max-content;
     position:absolute;
-    top: -10px;
+    top: -5px;
     height: 100%;
     
 }
@@ -94,8 +95,8 @@
 }
 @media screen and (min-width: 1044px) {
     .App{
-        padding-left: 100px;
-        padding-right: 100px;
+        /*padding-left: 100px;
+        padding-right: 100px;*/
     }
 }
 .menu-mobile i {
@@ -114,3 +115,14 @@
     font-size: 10px;
     
 }
+.btn-next{ 
+    @extend .button-basic;
+    background: linear-gradient(#c20831 0%, #f87988 100%);
+
+
+}
+.btn-back{
+    @extend .button-basic;
+    background: linear-gradient(#81365f 0%, #8b5571 100%, #c9daea 100%);    
+}
+

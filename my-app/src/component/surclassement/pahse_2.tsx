@@ -14,11 +14,11 @@ import { GiAirplaneDeparture, GiAirplaneArrival } from 'react-icons/gi';
 const members = ['Omar Abdellaoui', 'Amina Abdellaoui', 'Ahmed Abdellaoui', 'Mehdi Abdellaoui']
 const vols = [1, 2]
 
-const Phase2 = () => {
+const Phase2:React.FC <{onChangeStep:(currentStep: number , updatedStep : number)=>void}> = (props) => {
 
 
     return (
-        <div className="  ">
+        <div className="p-2">
             <div className="pahse-2 row justify-content-between  ">
                 <div className='section col-12 col-md-6  '>
                     <div>
@@ -97,6 +97,14 @@ const Phase2 = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='d-flex justify-content-between mt-3'>
+                <button onClick={()=>props.onChangeStep(1,0)} className='btn-back'>
+                    Précédente
+                </button>
+                <button onClick={()=>props.onChangeStep(1,2)} className='btn-next'>
+                    Surclassement
+                </button>
             </div>
         </div>
     )

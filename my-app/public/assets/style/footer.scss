@@ -1,0 +1,57 @@
+@import '../variables/variables.scss';
+
+.footer{
+    background: linear-gradient(#696969 0%, #353535 100%);
+    border-bottom: 5px solid #FFFFFF;
+    .logo img{
+        width: 100%;
+    }
+    .logo {
+        .ram{
+            border-right: 1px solid #D1D1D1;     
+        }
+        .one-world{
+            margin-left:20px;
+        }
+    }
+    .contact{
+        font-family: $font-museo;
+        font-size: 20px;
+        .phone{
+            border: 2px solid #FFFFFF;
+            padding: 5px;   
+            border-radius: 11px;
+            border: 1px solid #d3d3d3;
+            margin-right: 20px;
+            padding: 15px;
+        }
+        .email {
+            border : 2px solid #FFFFFF;
+            padding: 5px;   
+            border-radius: 11px;
+            border: 1px solid #d3d3d3;
+            margin-right: 20px;
+            padding: 15px;
+
+        }
+        i{
+            font-size: 35px;
+            border-radius: 10px;
+            background: linear-gradient(#b55389 0%, #b57f9d 100%);
+            box-shadow: 0px 10px 26px rgba(168, 1, 35, 0.35);
+            color: white;
+            padding: 6px 14px;
+            font-weight: 100;
+            svg{
+                position: relative;
+                
+            }
+        }
+        
+        span {
+            color: white;
+            position: relative;
+            left: 2px;
+        }
+    }
+}

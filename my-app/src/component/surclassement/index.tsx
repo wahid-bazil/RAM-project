@@ -1,4 +1,4 @@
-import IndexStepper from "../stepper"
+
 import Phase1 from "./pahse_1"
 import Phase2 from "./pahse_2"
 import Phase3 from "./phase_3"
@@ -59,14 +59,30 @@ const useStyles = makeStyles({
 
 const Surclassement = () => {
     const classes = useStyles();
-    const [currentStep, setCurrentStep] = React.useState(2);
-
+    const [currentStep, setCurrentStep] = React.useState(1);
     const [stepState, setStepState] = React.useState<{ [index: number]: boolean }>({
         0: true,
         1: false,
         2: false,
         3: false
     })
+    const expand = (index: number) => {
+        setStepState(prevState => ({
+            ...prevState,
+            [index]: !prevState[index]
+        }));
+    }
+
+    const OnChangeStep = (currentStep: number , updatedStep : number) => {
+        setCurrentStep(updatedStep);
+        setStepState(prevState => ({
+            ...prevState,
+            [currentStep]: !prevState[currentStep],
+            [updatedStep]: !prevState[updatedStep]
+
+        }));
+
+    }
 
     const icons: { [index: number]: React.ReactElement } = {
         0: <HiOutlineIdentification />,
@@ -77,27 +93,20 @@ const Surclassement = () => {
     };
 
     const phases: { [index: number]: React.ReactElement } = {
-        0: <Phase1 />,
-        1: <Phase2 />,
-        2: <Phase3 />,
+        0: <Phase1 onChangeStep={OnChangeStep} />,
+        1: <Phase2 onChangeStep={OnChangeStep}  />,
+        2: <Phase3 onChangeStep={OnChangeStep}  />,
         3: <Phase4 />,
 
     };
 
-    const expand = (index: number) => {
-        setStepState(prevState => ({
-            ...prevState,
-            [index]: !prevState[index]
-        }));
-    }
 
-    function pahseContainer() {
 
-    }
+
     return (
         <div style={{ backgroundImage: "./assets/images/groupe-648.png" }} className="container surclassement ">
-            <div className="">
-                <div className="title ">
+            <div className="offset-1">
+            <div className="title ">
                     <h3 className="">
                         SURCLASSEMENT
                     </h3>
@@ -128,11 +137,11 @@ const Surclassement = () => {
                                     <Connecteur active={currentStep == index} completed={currentStep > index} />
                                 </div>
                                 <Accordions expand={expand} index={index} phaseLabel={steps[currentStep].description} active={currentStep == index} completed={currentStep > index} />
-                               
+
                                 <div className={stepState[index] ? 'phase-container expanded' : 'phase-container '}>
-                                     {currentStep >= index ? phases[index] : null}
+                                    {currentStep >= index ? phases[index] : null}
                                 </div>
-                                
+
 
                                 {/*<Accordion elevation={0} style={{}} className={classes.root} id={String(index)} expanded={stepState[index]} onChange={(e) => onchange(e.currentTarget.id)}>
                                     <div className="phase-label">
@@ -150,8 +159,6 @@ const Surclassement = () => {
                                     </div>
                                 </Accordion>
                         */}
-
-
                             </div>
                         ))}
 

@@ -43,12 +43,12 @@ const useStyles = makeStyles({
 
 
 
-const Phase1 = () => {
+const Phase1 :React.FC <{onChangeStep:(currentStep: number , updatedStep : number)=>void}> = (props) => {
     const [age, setAge] = React.useState("");
     const classes = useStyles();
     return (
         <div>
-            <div className="phase-1  ">
+            <div className="phase-1">
                 <div className='form-container '>
                     <h6>
                         Saisissez votre aéroport de départ, votre code
@@ -135,6 +135,13 @@ const Phase1 = () => {
                         </div>
                     </div>
                 </div>
+                <div className='d-flex justify-content-end'>
+                    <button onClick={()=>props.onChangeStep(0,1)} className='btn-next'>
+                        Surclassement
+                    </button>
+
+                </div>
+
             </div>
         </div>
 

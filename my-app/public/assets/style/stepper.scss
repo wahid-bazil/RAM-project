@@ -1,8 +1,7 @@
 
 .stepper-connecter{
     position: relative;
-    
-   
+    height: 100px;
 }
 .step-label-icon {
     border-radius: 50%;
@@ -66,12 +65,11 @@
         
     }
     .stepper-connecter{
-        height: 40px;
         width: 5px;
         border-left: 5px solid #918588 ;
         display: block;
         margin: auto;
-        height: 100%;
+        height: 140%;
         
         
     }

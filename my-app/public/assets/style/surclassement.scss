@@ -1,6 +1,7 @@
 @import '../variables/variables.scss';
 .surclassement{
     position: relative;
+    
     background-image: url("../images/groupe-648.png");
     .title{
         background-color: rgba(255, 255, 255, 0.5);
@@ -104,6 +105,7 @@
         }
         .phase-container > div {
             opacity: 0;
+
             height: 100%;
            
         }
@@ -126,7 +128,7 @@
         .large-device{
             @media screen and (min-width: 1000px) {
                 .stepper-0{
-                    left: -75px;
+                    left: -85px;
                 }
                 
     
@@ -139,7 +141,6 @@
             padding-left: 50px;
 
         }
-
     }
 
     .phase-1 .form-container {

@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.button-basic, .btn-next, .btn-back {
+  color: white !important;
+  font-family: "El Messiri", sans-serif !important;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+}
+
 @media screen and (max-width: 1000px) {
   .phases .large-device {
     display: none;
@@ -72,7 +86,7 @@
   width: -moz-max-content;
   width: max-content;
   position: absolute;
-  top: -10px;
+  top: -5px;
   height: 100%;
 }
 
@@ -96,8 +110,8 @@
 
 @media screen and (min-width: 1044px) {
   .App {
-    padding-left: 100px;
-    padding-right: 100px;
+    /*padding-left: 100px;
+        padding-right: 100px;*/
   }
 }
 
@@ -115,5 +129,15 @@
   position: relative;
   top: 2px;
   font-size: 10px;
+}
+
+.btn-next {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c20831), to(#f87988));
+  background: linear-gradient(#c20831 0%, #f87988 100%);
+}
+
+.btn-back {
+  background: -webkit-gradient(linear, left top, left bottom, from(#81365f), color-stop(100%, #8b5571), to(#c9daea));
+  background: linear-gradient(#81365f 0%, #8b5571 100%, #c9daea 100%);
 }
 /*# sourceMappingURL=util.css.map */

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './component/home';
 import SliderIdex from './component/slider/index'
-import IndexStepper from './component/stepper/index'
+
 import { setConstantValue } from 'typescript';
 
 import Phase2 from './component/surclassement/pahse_2';
@@ -15,6 +15,8 @@ import surclassement from './component/surclassement';
 import Surclassement from './component/surclassement';
 import Header from './component/header'
 import Accordions from './component/accordion/index';
+import Button from '@mui/material/Button';
+import Footer from './footer';
 
 function App() {
   const [activeStep, setactiveStep] = React.useState(0);
@@ -44,15 +46,15 @@ function App() {
 
 
   return (
-    <div className="App">
-      <div className='mt-2'>
+    <div className="App ">
+      {/*<div className='mt-2 pl-md-4 pr-md-4'>
         <Header/>
       </div>
-      <div className=''>
+      <div className=''>  
         <Surclassement />
       </div>
-
-
+  */}
+      <Footer />
 
     </div>
   );
