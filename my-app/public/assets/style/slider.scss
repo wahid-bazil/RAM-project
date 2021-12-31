@@ -1,0 +1,74 @@
+.slider {
+    margin-top: 150px;
+    img{
+        width: 100%;
+        transition: transform 300ms;
+    }
+    .ActiveSlide img {
+        transform: scale(1);
+    }
+    .Inactive img {
+        width: 100%;
+        transform: scale(0.9);
+        transition: transform 300ms;
+    }
+    .arrow{
+        position: absolute;
+        top: -70px;
+        right: 10px;
+        display: inline;
+        margin-right: 100px;
+    }
+    .arrow i {
+        font-size:25px;
+    }
+    .arrow.next{
+        background-color: #C72D2D;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        border-radius: 10px;
+        border: none;
+        padding: 7.5px 15px;
+    }
+    .arrow.prev{
+        border: 1px solid #C72D2D;
+        background-color: white;
+        border-radius: 10px;
+        padding: 4px 8px;
+        margin-top: 2px;
+        margin-right: 165px;
+    } 
+    .title {
+        text-align: start;
+        .first {
+            font-weight: 500;
+            font-size: 30px;
+            letter-spacing: 0px;
+            color: #CF0A3D;
+          }
+        .first::after{
+            content:url('../images/group-271.png'); 
+            display: inline-block;
+            position: relative;
+            margin: 0px;
+        }
+        .second {
+            font-weight: 700;
+            font-size: 35px;
+            position: relative;
+            bottom: 10px;
+            letter-spacing: 0px;
+            color: #CF0A3D;
+          }
+    }
+
+      
+
+      
+
+  }
+
+
+
+
+
+

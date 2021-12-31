@@ -1,0 +1,66 @@
+ 
+POST/GET 
+{
+"reservation_code":"123456",
+"air_report":"Casablanca_Mohamed_v",
+"last_name":"bazil"
+}
+Response.statut = HTTP_200_OK
+{
+"passengers":["Omar Abdellaoui","Amina Abdellaoui","Ahmed Abdellaoui","Mehdi Abdellaoui"]
+
+				
+"flights" : {1:{
+				"id":""12121212212",
+				"departure":"AGadir(AGA)"
+				"arrival" : "Casabalnca(CMN)"
+				}
+			 2:{
+				"id":""12121212212",
+				"departure":"Casabalnca(CMN)"
+				"arrival" : "Orly(ORY)"
+				}
+			}
+}
+or Response.statut = HTTP_404_NOT_FOUND
+
+or HTTP_500_INTERNAL_SERVER_ERROR
+
+/***************/
+PUT
+{
+"reservation_code":"123456",
+
+"passengers":["Omar Abdellaoui","Amina Abdellaoui","Ahmed Abdellaoui"],
+
+"flights" : {1:{
+				"id":""12121212212",
+				"departure":"AGadir(AGA)"
+				"arrival" : "Casabalnca(CMN)"
+				}
+
+			},
+"devise"  : "MAD"
+}
+
+Response.statut = HTTP_200_OK
+
+{
+flight : {{
+				"id":""12121212212",
+				"departure":"AGadir(AGA)",
+				"arrival" : "Casabalnca(CMN)",
+				"duration" : "4h 15min"
+		}
+}
+"passengers":{
+				1:"Omar Abdellaoui",
+				2:"Amina Abdellaoui",
+				3:"Ahmed Abdellaoui",
+				},
+}
+"total":"6,100.00" ,
+"device" :"MAD",
+
+
+

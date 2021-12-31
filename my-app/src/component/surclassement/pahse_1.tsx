@@ -139,9 +139,7 @@ const Phase1 :React.FC <{onChangeStep:(currentStep: number , updatedStep : numbe
                     <button onClick={()=>props.onChangeStep(0,1)} className='btn-next'>
                         Surclassement
                     </button>
-
                 </div>
-
             </div>
         </div>
 

@@ -108,13 +108,6 @@
   }
 }
 
-@media screen and (min-width: 1044px) {
-  .App {
-    /*padding-left: 100px;
-        padding-right: 100px;*/
-  }
-}
-
 .menu-mobile i {
   position: relative;
   top: 6px;
@@ -131,6 +124,7 @@
   font-size: 10px;
 }
 
+/******/
 .btn-next {
   background: -webkit-gradient(linear, left top, left bottom, from(#c20831), to(#f87988));
   background: linear-gradient(#c20831 0%, #f87988 100%);

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.button-basic {
+  color: white !important;
+  font-family: "El Messiri", sans-serif !important;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+}
+
+.home .top-side {
+  background-image: url("../images/img-banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.home .top-side h1.title {
+  font-family: Museo;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  color: #cf0a3d;
+}
+
+.home .top-side h1.title::before {
+  background-image: url("../images/group-270.png");
+  background-size: 61px 61px;
+  display: inline-block;
+  width: 61px;
+  height: 75px;
+  background-repeat: no-repeat;
+  content: "";
+  position: relative;
+  bottom: 8px;
+  left: 13px;
+}
+
+.home .top-side p {
+  font-family: Museo;
+  font-weight: normal;
+  font-size: 20px;
+  color: #050505;
+  margin-left: 61px;
+  padding: 0px;
+  text-align: start;
+}
+
+.home .top-side p span {
+  font-weight: bold;
+  padding-bottom: 5px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.home .top-side .form .border-field {
+  border-right: 1px solid #7070707d;
+}
+
+.home .top-side .form h6 {
+  background: #CD2043 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 22px 22px 0px 0px;
+  opacity: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 19px 10px 19px;
+  color: white;
+  margin: 0px;
+}
+
+.home .top-side .form .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+          filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+  /* Note: currently only Safari supports backdrop-filter */
+  -webkit-backdrop-filter: blur(27.6006px);
+          backdrop-filter: blur(27.6006px);
+  --webkit-backdrop-filter: blur(27.60059928894043px);
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 1px 3px 16px #0000003b;
+          box-shadow: 1px 3px 16px #0000003b;
+  opacity: 1;
+  padding: 15px 12px 15px 12px;
+  border-radius: 10px;
+}
+
+.home .top-side .form .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.home .top-side .form .label i {
+  background: #FCD0DD 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  padding: 4.5px 9px;
+  font-size: 20px;
+  color: #E35D85;
+}
+
+.home .top-side .form .label i svg {
+  position: relative;
+  bottom: 2px;
+}
+
+.home .top-side .form .label span {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #050505;
+  text-shadow: 0px 3px 6px #00000029;
+  font-weight: 700;
+}
+
+.home .top-side .form .btn-ram-primary {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#C20831), to(#F87988)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #C20831 0%, #F87988 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 10px 26px #a8012359;
+          box-shadow: 0px 10px 26px #a8012359;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 40px;
+  padding: 2.5px 5px;
+}
+
+.home .top-side .form .btn-ram-primary svg {
+  position: relative;
+  bottom: 5px;
+}
+
+/****** responsive *******/
+/*# sourceMappingURL=home.css.map */

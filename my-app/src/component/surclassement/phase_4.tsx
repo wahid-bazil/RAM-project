@@ -124,7 +124,6 @@ const Phase4 = () => {
                             <div>
                                 3 x 6 100.00 MAD
                             </div>
-
                         </div>
                         <div className='d-flex total '>
                             <div className='col-4 label'>
@@ -135,14 +134,10 @@ const Phase4 = () => {
                                 18,300.00<span> MAD</span>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
         </div>
     )
-
 }
 export default Phase4

@@ -2,19 +2,6 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 
-body{
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: white;
-  
-}
-.App {
-  /*text-align: center;
-  background-image: url('./img-left-banner.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x:60px;*/ 
-}
 
 .App-logo {
   height: 40vmin;
@@ -47,5 +34,37 @@ body{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 1000px) {
+
+body{
+  /*padding-left: 5%;
+  padding-right: 5%;
+  */
+  background-color: white;
+}
+.App {
+  /*text-align: center;
+  background-image: url('./img-left-banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x:60px;
+  */
+  padding: 0px 83px;
+}
+
+}
+  
+/******* responsive App *******/
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .App {
+    padding: 0px 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    padding: 0px 0px;
   }
 }

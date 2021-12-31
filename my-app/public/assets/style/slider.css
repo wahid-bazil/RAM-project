@@ -1,0 +1,84 @@
+.slider {
+  margin-top: 150px;
+}
+
+.slider img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.slider .ActiveSlide img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.slider .Inactive img {
+  width: 100%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.slider .arrow {
+  position: absolute;
+  top: -70px;
+  right: 10px;
+  display: inline;
+  margin-right: 100px;
+}
+
+.slider .arrow i {
+  font-size: 25px;
+}
+
+.slider .arrow.next {
+  background-color: #C72D2D;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 10px;
+  border: none;
+  padding: 7.5px 15px;
+}
+
+.slider .arrow.prev {
+  border: 1px solid #C72D2D;
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px 8px;
+  margin-top: 2px;
+  margin-right: 165px;
+}
+
+.slider .title {
+  text-align: start;
+}
+
+.slider .title .first {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #CF0A3D;
+}
+
+.slider .title .first::after {
+  content: url("../images/group-271.png");
+  display: inline-block;
+  position: relative;
+  margin: 0px;
+}
+
+.slider .title .second {
+  font-weight: 700;
+  font-size: 35px;
+  position: relative;
+  bottom: 10px;
+  letter-spacing: 0px;
+  color: #CF0A3D;
+}
+/*# sourceMappingURL=slider.css.map */

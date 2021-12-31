@@ -7,6 +7,7 @@ import { IoPricetagsOutline } from 'react-icons/io5';
 const members = ['Omar Abdellaoui', 'Amina Abdellaoui', 'Ahmed Abdellaoui']
 
 const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number)=>void}> = (props) => {
+    
     return (
         <div className="">
             <div className='phase-3'>
@@ -15,7 +16,7 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                         <div className="col-3 left d-flex flex-column align-items-center">
                             <div>
                                 <i>
-                                    <GiAirplaneDeparture />
+                                    <GiAirplaneDeparture/>
                                 </i>
                             </div>
                             <div className='hour'>
@@ -59,7 +60,7 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                         </div>
                     </div>
                 </div>
-                <div className='row justify-content-between mt-5 '>
+                <div className='row justify-content-between mt-5'>
                     <div className='section  col-12 col-md-6'>
                         <div>
                             <div className='phase-title d-flex '>
@@ -114,6 +115,5 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
             </div>
         </div>
     )
-
 }
 export default Phase3

@@ -60,8 +60,8 @@ const SliderIdex = () => {
 
     };
     return (
-        <div className="slider mt-5 ">
-            <div className="title text-start">
+        <div className="slider mt-5 pl-5 pr-5 ">
+            <div className="title ">
                 <div className="first">
                     DESCRIPTION 
                 </div>

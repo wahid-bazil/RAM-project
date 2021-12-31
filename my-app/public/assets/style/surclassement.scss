@@ -84,7 +84,6 @@
             border-radius: 10px;
             opacity: 1;
             height: 0px; 
-
             position: relative;      
         }
         .phase-container.expanded{
@@ -93,7 +92,8 @@
             -webkit-transition: all 0.25s ease-in-out;
             -moz-transition: all 0.26s ease-in-out;
             -o-transition: all 0.26s ease-in-out;
-            transition: all 0.25s ease-in-out;      
+            transition: all 0.25s ease-in-out;
+              
         }
         .phase-container.expanded > div {
             opacity: 1;
@@ -153,7 +153,6 @@
         text-align: center;
         font-family: 'Lato', sans-serif;
         font-weight: bold;
-       
     }
     .phase-1 form {
         display: flex;
@@ -170,7 +169,6 @@
         padding-left: 10px;
         padding-right: 15px;
     }
-    
     .phase-1 .description img {
         width: 100%;
       

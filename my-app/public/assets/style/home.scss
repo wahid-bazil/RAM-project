@@ -1,0 +1,123 @@
+@import '../variables/variables.scss';
+.home{
+    .top-side{
+        background-image: url('../images/img-banner.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        h1.title{
+            font-family: Museo;
+            font-weight: normal;
+            font-size: 60px;
+            text-align: left;
+            color: #cf0a3d;
+        }
+        h1.title::before{
+            background-image: url('../images/group-270.png');
+            background-size: 61px 61px;
+            display: inline-block;
+            width: 61px;
+            height: 75px;
+            background-repeat: no-repeat;
+            content: "";
+            position: relative;
+            bottom: 8px;
+            left: 13px;
+        }
+        p{
+            font-family: Museo;
+            font-weight: normal;
+            font-size: 20px;
+            color: #050505;
+            margin-left: 61px;
+            padding: 0px;
+            text-align: start;
+            span{
+                font-weight: bold;
+                padding-bottom: 5px;
+                transform: scale(1.1);
+            }
+        }
+        .form {
+            .border-field{
+                border-right: $border-primary;
+            }
+            h6{
+                background: #CD2043 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 22px 22px 0px 0px;
+                opacity: 1;
+                width: max-content;
+                padding: 10px 19px 10px 19px;
+                color: white;
+                margin: 0px;
+            }
+            .form-container{
+                display: flex;
+                background: transparent;
+                filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+                /* Note: currently only Safari supports backdrop-filter */
+                backdrop-filter: blur(27.60059928894043px);
+                --webkit-backdrop-filter: blur(27.60059928894043px);
+                background-color: rgba(255, 255, 255, 0.3);
+                box-shadow: 1px 3px 16px #0000003b;
+                opacity: 1;
+                padding: 15px 12px 15px 12px;
+                border-radius: 10px;
+            }
+            .label{
+                display: flex;
+                justify-content: start;
+                i{
+                    background: #FCD0DD 0% 0% no-repeat padding-box;
+                    border-radius: 6px;
+                    padding: 4.5px 9px;
+                    font-size: 20px;
+                    color: #E35D85;
+                    svg{
+                        position: relative;
+                        bottom: 2px;
+                    }
+                }
+                span{
+                    margin-left: 10px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: #050505;
+                    text-shadow: 0px 3px 6px #00000029;
+                    font-weight: 700;
+                }
+            }
+            .btn-ram-primary{
+                background: transparent linear-gradient(
+                    0deg
+                    , #C20831 0%, #F87988 100%) 0% 0% no-repeat padding-box;
+                box-shadow: 0px 10px 26px #a8012359;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                font-size: 40px;
+                padding: 2.5px 5px ;
+                svg{
+                    position: relative;
+                    bottom: 5px;
+                }
+                
+            }
+        }
+    }
+}
+
+/****** responsive *******/
+@media screen and (max-width: 1000px) {
+    .form-container{
+      
+    }
+}
+@media screen and (min-width: 1000px) {
+    .form-container{
+      
+    }
+}

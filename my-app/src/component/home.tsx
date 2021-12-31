@@ -19,142 +19,116 @@ function Home() {
 
 
     return (
-        <div className="container">
-                <div className="home ">
-            <div style={{
-                backgroundImage: `url(${image})`
-            }}>
-                <div className="p-5 pt-4">
-                    {<Header />}
-                    <div className="col-6 mt-5  pt-5">
-                        <h1 className="home-title">
+        <div className="home ">
+            <div className="top-side pb-0 pt-2">
+                <div className='pr-md-5 pl-md-5'>
+                    <Header />
+                </div>
+                <div className="p-5 mt-5 mb-4">
+                    <div className="col-md-10 ">
+                        <h1 className="title">
                             BUSINESS CLASS
                         </h1>
-                        <div className="pr-5">
-                            <h4 className="home-subtitle">
-                                Voyagez en Business Class avec RPYAL Air Maroc et découvrez Nos nouveau standards de confort à bord
-                            </h4>
-                            <p className="home-text">
-                                cabine plus spacieuse ,Programmes de divertissement individuels , siège encuirs , restauration savoureuse et variée ,
-                                faites l'expérience d'un voyage aillant confort ,Plaisir et sérénité
-                            </p>
-                        </div>
+                        <p className="col-7">
+                            <span>
+                                Voyagez en Business Class aves Royal Air Maroc et découvrez Nos nouveaux standards de confort à bord
+                            </span>
+                            <br />
+                            cabine plus spacieuse, Programmes de divertissement
+                            individuels, sièges en cuirs, restauration Savoureuse et variée,
+                            faites l’expérience d’un voyage alliant confort, Plaisir et sérénité.
+                        </p>
                     </div>
-                    <div className="form mt-5">
-                        <div className=" form-title col-2   ">
-                            <div className="">
-                                SURCLASSEMENT
-                            </div>
-                        </div>
+                    <div className="form mt-5 pt-4">
+                        <h6>
+                            SURCLASSEMENT
+                        </h6>
                         <div className="form-container">
-                            <div className="d-flex justify-content-between   ">
-                                <div className="col-3 ">
-                                    <div className="label d-flex ">
-                                        <IconContext.Provider
-                                            value={{ color: '#CF013E' }}
-                                        >
+                            <div className="col-3 border-field">
+                                <div className="label ">
+                                    <i>
+                                        <FaPlaneDeparture />
+                                    </i>
+                                    <span> Aéroport de départ</span>
+                                </div>
+                                <div>
+                                    <TextField
+                                        id="standard-multiline-flexible"
+                                        value={'Casablanca Mohamed v (CMN)'}
+                                        variant="standard"
+                                        margin="normal"
+                                        fullWidth
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-3 border-field">
+                                <div className="label">
+                                    <i>
+                                        <FaHashtag />
+                                    </i>
+                                    <span>Code de réservation</span>
+                                </div>
+                                <TextField
+                                    id="standard-multiline-flexible"
+                                    multiline
+                                    maxRows={4}
+                                    value={'Code (6 caratère)..'}
+                                    variant="standard"
+                                    margin="normal"
+                                    fullWidth
+                                />
+                            </div>
+                            <div className="col-3 border-field">
+                                <div className="label">
+                                    <i>
+                                        <MdFamilyRestroom />
+                                    </i>
+                                    <span>NOM</span>
+                                </div>
+                                <TextField
+                                    id="standard-multiline-flexible"
+                                    multiline
+                                    maxRows={4}
+                                    value={'Nom de famille '}
+                                    variant="standard"
+                                    margin="normal"
+                                    fullWidth
+                                />
+                            </div>
+                            <div className="col-3 field">
+                                <div className="d-flex justify-content-between">
+                                    <div>
+                                        <div className="label">
                                             <i>
-                                                <FaHashtag />
+                                                <BsCurrencyExchange />
                                             </i>
-                                        </IconContext.Provider>
-                                        <span> Aéroport de départ</span>
-                                    </div>
-                                    <div className=" ">
+                                            <span>Devise</span>
+                                        </div>
                                         <TextField
                                             id="standard-multiline-flexible"
-                                            value={'Casablanca Mohamed v (CMN)'}
+                                            multiline
+                                            maxRows={4}
+                                            value={'MAD'}
                                             variant="standard"
                                             margin="normal"
                                             fullWidth
                                         />
                                     </div>
-                                </div>
-                                <div className="col-3">
-                                    <div className="label d-flex">
-                                        <IconContext.Provider
-                                            value={{ color: '#CF013E' }}
-                                        >
-                                            <i>
-                                                <FaHashtag />
-                                            </i>
-                                        </IconContext.Provider>
-                                        <span>Code de réservation</span>
-                                    </div>
-                                    <TextField
-                                        id="standard-multiline-flexible"
-                                        multiline
-                                        maxRows={4}
-                                        value={'Code (6 caratère)..'}
-                                        variant="standard"
-                                        margin="normal"
-                                        fullWidth
-                                    />
-                                </div>
-                                <div className="col-3 ">
-                                    <div className="label d-flex">
-                                        <IconContext.Provider
-                                            value={{ color: '#CF013E' }}
-                                        >
-                                            <i>
-                                                <MdFamilyRestroom />
-                                            </i>
-                                        </IconContext.Provider>
-                                        <span>NOM</span>
-                                    </div>
-                                    <TextField
-                                        id="standard-multiline-flexible"
-                                        multiline
-                                        maxRows={4}
-                                        value={'Nom de famille '}
-                                        variant="standard"
-                                        margin="normal"
-                                        fullWidth
-                                    />
-                                </div>
-                                <div className="col-3 border-0">
-                                    <div className="d-flex justify-content-between">
-                                        <div>
-                                            <div className="label d-flex">
-                                                <IconContext.Provider
-                                                    value={{ color: '#CF013E' }}
-                                                >
-                                                    <i>
-                                                        <BsCurrencyExchange />
-                                                    </i>
-                                                </IconContext.Provider>
-                                                <span>Devise</span>
-                                            </div>
-                                            <TextField
-                                                id="standard-multiline-flexible"
-                                                multiline
-                                                maxRows={4}
-                                                value={'MAD'}
-                                                variant="standard"
-                                                margin="normal"
-                                                fullWidth
-                                            />
-                                        </div>
-                                        <button className="btn btn-ram-primary ">
-                                        <IconContext.Provider
-                                                    value={{ color: 'white' , size:"40px" }}
-                                                >
-                                                        <MdNavigateNext />
-                                                </IconContext.Provider>
-                                        </button>
-                                    </div>
+                                    <button className="btn btn-ram-primary ">
+                                        <MdNavigateNext />
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
-        </div >
-        <div>
-            <SliderIdex/>
+            <div>
+                {/*<SliderIdex />*/}
+            </div>
         </div>
-            
-        </div>
-    
     );
 }
 export default Home
