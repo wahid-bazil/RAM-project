@@ -19,7 +19,7 @@ function Home() {
 
 
     return (
-        <div className="home ">
+        <div className="home bg-white">
             <div className="top-side pb-0 pt-2">
                 <div className='pr-md-5 pl-md-5'>
                     <Header />
@@ -126,7 +126,7 @@ function Home() {
 
             </div>
             <div>
-                {/*<SliderIdex />*/}
+                <SliderIdex />
             </div>
         </div>
     );

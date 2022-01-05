@@ -1,6 +1,7 @@
 @import "../variables/variables.scss";
 
 header {
+    margin-top: 10px!important;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
     position: relative;
@@ -15,7 +16,6 @@ header {
         align-items: center;
         .ram {
             border-right:1px solid #b9b4b4 ;
-        
         }
         .one-world {
             margin-left: 20px;
@@ -46,7 +46,7 @@ header {
                 border-radius: 5px;
                 width: 100%;
                 position: relative;
-                top: 27px;
+                top: 25px;
                 border-radius: 5px;
             }
 
@@ -75,46 +75,145 @@ header {
         }
 
     }
-   
 }
 
 /**********Responsive/*********/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:300px){
     header {
+        margin-left: 0px;
+        margin-right: 0px;
         .logo{
             .ram img{
-              width: 60px;
+                width: 71px;
             }
             .one-world img {
-                width: 25px;
+                width: 28px;
             }
         }
         .menu.small-device{
             i{
-                font-size: 18px;
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+@media screen and (min-width:300px)  and (max-width:430px){
+    header {
+        margin-left: 8px;
+        margin-right: 8px;
+        .logo{
+            .ram img{
+                width: 71px;
+            }
+            .one-world img {
+                width: 28px;
+            }
+        }
+        .menu.small-device{
+            i{
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+@media screen and (min-width:430px) and (max-width:768px){
+    header {
+        margin-left: 8px;
+        margin-right: 8px;
+        .logo{
+            .ram img{
+                width: 88px;
+            }
+            .one-world img {
+                width: 37px;
+            }
+        }
+        .menu.small-device{
+            i{
+                font-size: 20px;
             }
         }
     }
 }
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width:768px) and (max-width:992px){
     header {
+        margin-left: 8px;
+        margin-right: 8px;
         .logo{
             .ram img{
-                width: 110px;
+                width: 98px;
             }
             .one-world img {
-                width: 42px;
+                width: 41px;
             }
         }
         .menu.small-device{
             i{
-                font-size: 18px;
+                font-size: 20px;
             }
         }
     }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    header {
+        margin-left: 8px;
+        margin-right: 8px;
+        .logo{
+            .ram img{
+                width: 98px;
+            }
+            .one-world img {
+                width: 41px;
+            }
+        }
+        .menu.small-device{
+            i{
+                font-size: 20px;
+            }
+        }
+        .menu.small-device{
+            display :none
+        }
+        .menu-large-device{
+            display: flex;
+        }
+    }
+}
 
+@media screen and (min-width:1200px){
+    header {
+        margin-left: 50px;
+        margin-right: 50px;
+        .logo{
+            .ram img{
+                width: 98px;
+            }
+            .one-world img {
+                width: 41px;
+            }
+        }
+        .menu.small-device{
+            i{
+                font-size: 20px;
+            }
+        }
+        .menu.small-device{
+            display :none
+        }
+        .menu-large-device{
+            display: flex;
+        }
+    }
+    
+
+}
+@media screen and (max-width:992px) {
+    .menu-large-device {
+        display: none
+    }
 }
 
 

@@ -94,20 +94,19 @@ const Surclassement = () => {
 
     return (
         <div>
-            <div className="pl-md-5 pr-md-5 mt-3 mb-md-5">
+            <div className=" header-test-0">
                 <Header />
             </div>
-            <div className="container surclassement ">
-
-                <div className="offset-md-1">
-                    <div className="title ">
+            <div className="container surclassement">
+                <div className="">
+                    <div className="title">
                         <h3>
                             SURCLASSEMENT
                         </h3>
                     </div>
                     <div className="phases">
-                        <div className="small-device ">
-                            <div className="stepper-mobile ">
+                        <div className="small-device">
+                            <div className="stepper-mobile">
                                 <div className="d-flex justify-content-between">
                                     {steps.map((step, index) => (
                                         <div>
@@ -124,6 +123,9 @@ const Surclassement = () => {
                             </div>
                         </div>
                         <div className="large-device">
+                            <div className="test-image-0">
+                                <img src="./assets/images/image-left.jpg" alt='' />
+                            </div>
                             {steps.map((step, index) => (
                                 <div key={index} >
                                     <div className='stepper-0'>
@@ -134,29 +136,12 @@ const Surclassement = () => {
                                     <div className={stepState[index] ? 'phase-container expanded' : 'phase-container '}>
                                         {currentStep >= index ? phases[index] : null}
                                     </div>
-                                    {/*<Accordion elevation={0} style={{}} className={classes.root} id={String(index)} expanded={stepState[index]} onChange={(e) => onchange(e.currentTarget.id)}>
-                                   <div className="phase-label">
-                                       <AccordionSummary
-                                           style={{ border: "none", borderTop:'none' }}
-                                           expandIcon={currentStep >= index ? <MdExpandMore /> : null}
-                                           aria-controls="panel1bh-content"
-                                           id={String(index)}
-                                       >
-                                           <h6 className={currentStep >= index ? 'phase-title active' : 'phase-title  '}>{step.description}</h6><span className="hl" />
-                                       </AccordionSummary>
-                                   </div>
-                                   <div className="p-5 pl-5 ">
-                                       {currentStep >= index ? phases[index] : null}
-                                   </div>
-                               </Accordion>
-                       */}
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
     )

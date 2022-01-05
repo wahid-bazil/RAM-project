@@ -1,20 +1,12 @@
 
 import { MdAirlineSeatReclineExtra } from 'react-icons/md';
 import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 import { MdDone } from "react-icons/md";
-import { makeStyles } from '@mui/styles';
 import { IoAirplaneOutline } from 'react-icons/io5';
-import { MdOutlineNavigateNext } from 'react-icons/md';
 import { GiAirplaneDeparture, GiAirplaneArrival } from 'react-icons/gi';
-
 const members = ['Omar Abdellaoui', 'Amina Abdellaoui', 'Ahmed Abdellaoui', 'Mehdi Abdellaoui']
 const vols = [1, 2]
-
-const Phase2:React.FC <{onChangeStep:(currentStep: number , updatedStep : number)=>void}> = (props) => {
+const Phase2: React.FC<{ onChangeStep: (currentStep: number, updatedStep: number) => void }> = (props) => {
 
 
     return (
@@ -29,10 +21,10 @@ const Phase2:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                                 Veuillez sélectionner les passagers
                             </span>
                         </div>
-                        <div className='passagers position-relative d-flex flex-column  mt-4 '>
+                        <div className='passagers position-relative d-flex flex-column mt-4 '>
                             <img className='' src='.\assets\images\seat.svg' alt='' />
                             {members.map((member, index) => (
-                                <div className='d-flex col-9 justify-content-start align-items-center'>
+                                <div className='d-flex col-12 col-lg-9 justify-content-start align-items-center'>
                                     <Radio sx={{
                                         color: '#C20831',
                                         '&.Mui-checked': {
@@ -61,18 +53,20 @@ const Phase2:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                         <div className='vols position-relative d-flex flex-column  mt-3 '>
                             <img className='' src='.\assets\images\air-plan.png' alt='' />
                             {vols.map((member, index) => (
-                                <div className='d-flex justify-content-start align-items-center '>
-                                    <Radio sx={{
-                                        color: '#C20831',
-                                        '&.Mui-checked': {
+                                <div className='d-flex justify-content-start align-items-center'>
+                                    <div className='col-1 p-0 '>
+                                        <Radio sx={{
                                             color: '#C20831',
-                                        },
-                                        "& .MuiSvgIcon-root": {
-                                            height: 20,
-                                            width: 20,
-                                        }
-                                    }} />
-                                    <div className='vol-details col-9'>
+                                            '&.Mui-checked': {
+                                                color: '#C20831',
+                                            },
+                                            "& .MuiSvgIcon-root": {
+                                                height: 20,
+                                                width: 20,
+                                            }
+                                        }} />
+                                    </div>
+                                    <div className='vol-details col-11 col-lg-11'>
                                         <div className='d-flex  align-items-center vol-details mb-2 '>
                                             <i>
                                                 <GiAirplaneDeparture />
@@ -98,11 +92,11 @@ const Phase2:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                     </div>
                 </div>
             </div>
-            <div className='d-flex justify-content-between mt-3'>
-                <button onClick={()=>props.onChangeStep(1,0)} className='btn-back'>
+            <div className='row justify-content-between mt-3'>
+                <button onClick={() => props.onChangeStep(1, 0)} className='btn-back'>
                     Précédente
                 </button>
-                <button onClick={()=>props.onChangeStep(1,2)} className='btn-next'>
+                <button onClick={() => props.onChangeStep(1, 2)} className='btn-next'>
                     Surclassement
                 </button>
             </div>

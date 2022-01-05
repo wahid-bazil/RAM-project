@@ -1,21 +1,16 @@
 @import '../variables/variables.scss';
 .surclassement{
     position: relative;
-    
     background-image: url("../images/groupe-648.png");
     .title{
-        background-color: rgba(255, 255, 255, 0.5);
-        margin-top: 25px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        /*background-color: rgba(255, 255, 255, 0.5);*/
+        background-color: white;
         font-family:$font-museo;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         display: flex;
         justify-content: center;
         color: #d84755;
         font-weight: 100;
-        margin-top: 30px;
-        margin-bottom: 20px;
         border-bottom: 2px solid #d84755;
         border-radius: 5px;
         h3{
@@ -62,9 +57,6 @@
         .large-device > div {
             margin-bottom: 28px;
             position: relative;
-
-            
-            
             .phase-label{
                 span{
                     border-bottom:5px solid #FFFFFF;
@@ -111,10 +103,9 @@
         }
         .small-device{
             .stepper-mobile{
-
+                padding-top: 26px;
                 border-bottom: 5px solid;
                 border-color: #e71946;
-
                 h6{
                     font-family: $font-museo;
                     font-weight: normal;
@@ -122,7 +113,6 @@
                     color: #c20831;
                     margin-top: 10px;
                 }
-                
             }
         }
         .large-device{
@@ -164,7 +154,7 @@
         border-right: 1px solid #E35D6E;
         padding-right: 5px;
     }
-    .phase-1 .description >div{
+    .phase-1 .description > div{
         padding-top: 15px;
         padding-left: 10px;
         padding-right: 15px;
@@ -184,7 +174,7 @@
             font-weight: bolder;
         }
         p{
-            text-align: justify;
+            text-align: start;
         }
     }
     .pahse-2 .passagers img {
@@ -200,6 +190,7 @@
         bottom: 0;
         right: 0;
         opacity: 0.5;
+        z-index: 1001;
     }
     /*************************************/
     /**************** Section ***********/
@@ -295,6 +286,7 @@
         background-color: #FCFCFC;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         padding-bottom: 10px;
+        text-align: center;
     }
     .phase-3 .coordinates {
         font-family: 'Lato', sans-serif;
@@ -355,36 +347,18 @@
 
 
 /* responsive*/
-@media screen and (max-width: 280px) {
+@media screen and (max-width:300px) {
     .surclassement{
-        .title {
-            h3{
-                font-size: 15px;
-            }
-        }
-        .phases{
-            .small-device{
-                background-color: white;
-                .stepper-mobile{
-                    h6{
-                       font-size:13px;
-                    }
-                }
-            }
-            .phase-1 {
-                padding-left: 5px;
-                padding-right: 5px;
-                .form-container h6 {
-                    font-size: 10px;
-                }
-                
-            }
-        }
+        padding: 0px !important;
     }
 }
-@media screen and (min-width:280px) and (max-width:340px) {
+@media screen and (max-width:340px) {
     .surclassement{
         .title {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             h3{
                 font-size: 15px;
             }
@@ -399,17 +373,24 @@
                 }
             }
             .phase-1 {
-
                 .form-container h6 {
                     font-size: 12px;
                 }
+                p{
+                    font-size:11px;
+                }
             }
         }
+
     }
 }
 @media screen and (min-width:340px) and (max-width:430px) {
     .surclassement{
         .title {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             h3{
                 font-size: 16px;
             }
@@ -427,13 +408,21 @@
                 .form-container h6 {
                     font-size: 12px;
                 }
+                p{
+                    font-size:13px;
+                }
             }
         }
+
     }
 }
-@media screen and (min-width:430px) and (max-width:1000px) {
+@media screen and (min-width:430px) and (max-width:768px) {
     .surclassement{
         .title {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             h3{
                 font-size: 17px;
             }
@@ -448,15 +437,66 @@
                 }
             }
             .phase-1 {
-             
                 .form-container h6 {
                     font-size: 14px;
+                }
+                p{
+                    font-size:13px;
                 }
             }
         }
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (min-width:768px) and (max-width:992px) {
+    .surclassement{
+        .title {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            h3{
+                font-size: 17px;
+            }
+        }
+        .phases{
+            .small-device{
+                background-color: white;
+                .stepper-mobile{
+                    h6{
+                       font-size:14px;
+                    }
+                }
+            }
+            .phase-1 {
+                .form-container h6 {
+                    font-size: 14px;
+                }
+                p{
+                    font-size:15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px)  {
+    .surclassement{
+        .phases {
+            .small-device{
+                display: none;
+            }
+        }
+        .title {
+            margin-top: 30px;
+            margin-bottom: 17px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            h3{
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width:992px)  {
     .surclassement{
         .phases{
             padding-left: 8px;
@@ -464,15 +504,5 @@
             background-color: white;
         }
     }
-}
-@media screen and (min-width:1000px) and (max-width:2000px) {
-    .surclassement{
-        .title {
-            h3{
-                font-size: 25px;
-            }
-        }
 
-    }
 }
-

@@ -1,9 +1,8 @@
 import React from "react";
-import IconButton from '@mui/material/IconButton';
 import { MdNavigateNext } from "react-icons/md";
 
 
-const Accordions: React.FC<{expand:(index:number)=>void,  active: boolean, completed: boolean, phaseLabel: String , index:number}> = (props) => {
+const Accordions: React.FC<{ expand: (index: number) => void, active: boolean, completed: boolean, phaseLabel: String, index: number }> = (props) => {
 
     function PhaseLabelClasse(active: boolean, completed: boolean) {
         if (active) {
@@ -47,14 +46,16 @@ const Accordions: React.FC<{expand:(index:number)=>void,  active: boolean, compl
         }
     }
 
-
     return (
         <div className="accordion d-flex justify-content-between ">
             <h6 className={PhaseLabelClasse(props.active, props.completed)}>
                 {props.phaseLabel}
             </h6>
             <span className={SpanClasse(props.active, props.completed)} />
-            <i onClick={()=>props.expand(props.index)} className={IconClasse(props.active, props.completed)}>
+            {/*} <i onClick={()=>props.expand(props.index)} className={IconClasse(props.active, props.completed)}>
+                <MdNavigateNext />
+    </i>*/}
+            <i className={IconClasse(props.active, props.completed)}>
                 <MdNavigateNext />
             </i>
         </div>

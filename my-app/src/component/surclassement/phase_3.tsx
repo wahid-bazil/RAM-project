@@ -9,11 +9,11 @@ const members = ['Omar Abdellaoui', 'Amina Abdellaoui', 'Ahmed Abdellaoui']
 const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number)=>void}> = (props) => {
     
     return (
-        <div className="">
+        <div>
             <div className='phase-3'>
                 <div className='section'>
                     <div className="coordinates d-flex">
-                        <div className="col-3 left d-flex flex-column align-items-center">
+                        <div className="col-3  left d-flex flex-column align-items-center">
                             <div>
                                 <i>
                                     <GiAirplaneDeparture/>
@@ -29,7 +29,7 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                                 22 septembre 2O21
                             </div>
                         </div>
-                        <div className='col-6 center  d-flex justify-content-between align-items-center'>
+                        <div className='col-6  center  d-flex justify-content-between align-items-center'>
                             <div className='line' />
                             <div>
                                 <i><TiStopwatch /></i>
@@ -42,7 +42,7 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                             </div>
                             <div className='line' />
                         </div>
-                        <div className='col-3 right d-flex flex-column align-items-center'>
+                        <div className='col-3  right d-flex flex-column align-items-center'>
                             <div>
                                 <i>
                                     <GiAirplaneArrival />
@@ -54,13 +54,13 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                             <div className='place'>
                                 Paris ( PAR )
                             </div>
-                            <div className='date'>
+                            <div className='date '>
                                 22 septembre 2O21
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='row justify-content-between mt-5'>
+                <div className='row justify-content-between mt-3 mb-4'>
                     <div className='section  col-12 col-md-6'>
                         <div>
                             <div className='phase-title d-flex '>
@@ -84,7 +84,7 @@ const Phase3:React.FC <{onChangeStep:(currentStep: number , updatedStep : number
                             </div>
                         </div>
                     </div>
-                    <div className='section to col-12 col-md-6 mt-4'>
+                    <div className='section  col-12 col-md-6 '>
                         <div>
                             <div className='phase-title d-flex  '>
                                 <i><IoPricetagsOutline /></i>

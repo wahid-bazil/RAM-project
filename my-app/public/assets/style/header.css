@@ -13,6 +13,7 @@
 }
 
 header {
+  margin-top: 10px !important;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
@@ -80,7 +81,7 @@ header .menu-large-device li.menu-title .hl {
   border-radius: 5px;
   width: 100%;
   position: relative;
-  top: 27px;
+  top: 25px;
   border-radius: 5px;
 }
 
@@ -113,27 +114,121 @@ header .menu-large-device li.email-icon i {
 }
 
 /**********Responsive/*********/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 300px) {
+  header {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   header .logo .ram img {
-    width: 60px;
+    width: 71px;
   }
   header .logo .one-world img {
-    width: 25px;
+    width: 28px;
   }
   header .menu.small-device i {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  header {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
   header .logo .ram img {
-    width: 110px;
+    width: 71px;
   }
   header .logo .one-world img {
-    width: 42px;
+    width: 28px;
   }
   header .menu.small-device i {
-    font-size: 18px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  header {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  header .logo .ram img {
+    width: 88px;
+  }
+  header .logo .one-world img {
+    width: 37px;
+  }
+  header .menu.small-device i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  header .logo .ram img {
+    width: 98px;
+  }
+  header .logo .one-world img {
+    width: 41px;
+  }
+  header .menu.small-device i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  header .logo .ram img {
+    width: 98px;
+  }
+  header .logo .one-world img {
+    width: 41px;
+  }
+  header .menu.small-device i {
+    font-size: 20px;
+  }
+  header .menu.small-device {
+    display: none;
+  }
+  header .menu-large-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  header .logo .ram img {
+    width: 98px;
+  }
+  header .logo .one-world img {
+    width: 41px;
+  }
+  header .menu.small-device i {
+    font-size: 20px;
+  }
+  header .menu.small-device {
+    display: none;
+  }
+  header .menu-large-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .menu-large-device {
+    display: none;
   }
 }
 /*# sourceMappingURL=header.css.map */

@@ -17,7 +17,8 @@ const useStyles = makeStyles({
             borderColor: "#D66B79",
             borderRadius: "5px",
             Color:'white',
-            border: '0.5px solid '
+            border: '0.5px solid ',
+
         },
         ".MuiTextField-root":{
             backgroundColor: 'black',
@@ -108,7 +109,6 @@ const Phase1 :React.FC <{onChangeStep:(currentStep: number , updatedStep : numbe
                                 startAdornment: (
                                     <InputAdornment position="start">
                                         <i><MdFamilyRestroom /></i>
-
                                     </InputAdornment>
                                 ),
                             }}
@@ -135,16 +135,13 @@ const Phase1 :React.FC <{onChangeStep:(currentStep: number , updatedStep : numbe
                         </div>
                     </div>
                 </div>
-                <div className='d-flex justify-content-end'>
+                <div className='d-flex justify-content-end mt-3 mt-lg-0'>
                     <button onClick={()=>props.onChangeStep(0,1)} className='btn-next'>
                         Surclassement
                     </button>
                 </div>
             </div>
         </div>
-
     );
-
 }
-
 export default Phase1
