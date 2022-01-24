@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './App.css';
+import Header from './component/header';
+import Home from './component/home';
 
 import Surclassement from './component/surclassement';
 
 
-function App() {
-
-
+const App =()=>{
+  document.body.style.backgroundColor = "white"
   return (
-    <div className="App  ">
+    <div className="App">
       <Surclassement/>
     </div>
   );

@@ -31,7 +31,7 @@ function Header() {
     const image = ['./assets/images/logo.png', './assets/images/oneworld-logo.png']
     const classes = useStyles();
     return (
-        <header className="">
+        <header>
             <div className="d-flex justify-content-between align-items-center position-relative  p-0  ">
                 <div className="logo ">
                     <div className="ram">

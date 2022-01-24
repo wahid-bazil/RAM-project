@@ -1,13 +1,12 @@
 @import "../variables/variables.scss";
 
 header {
-    margin-top: 10px!important;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
     position: relative;
-    background: rgba(255, 255, 255, 0.9);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    top: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     display: block;
     margin: auto;       
     .logo{
@@ -40,13 +39,13 @@ header {
               font-size: 15px;
               position: relative;
               top: 5px;
+              
             }
             .hl{
-                border-bottom: 2.5px solid #d84755;
+                border-bottom: 2.5px solid #d5123a;                
                 border-radius: 5px;
                 width: 100%;
                 position: relative;
-                top: 25px;
                 border-radius: 5px;
             }
 
@@ -81,6 +80,7 @@ header {
 
 @media screen and (max-width:300px){
     header {
+        background-color: white;
         margin-left: 0px;
         margin-right: 0px;
         .logo{
@@ -101,6 +101,7 @@ header {
 }
 @media screen and (min-width:300px)  and (max-width:430px){
     header {
+        background-color: white;
         margin-left: 8px;
         margin-right: 8px;
         .logo{
@@ -121,6 +122,7 @@ header {
 }
 @media screen and (min-width:430px) and (max-width:768px){
     header {
+        background-color: white;
         margin-left: 8px;
         margin-right: 8px;
         .logo{
@@ -140,6 +142,7 @@ header {
 }
 @media screen and (min-width:768px) and (max-width:992px){
     header {
+        background-color: white;
         margin-left: 8px;
         margin-right: 8px;
         .logo{
@@ -159,6 +162,7 @@ header {
 }
 @media screen and (min-width:992px) and (max-width:1200px){
     header {
+        background: rgba(255, 255, 255, 0.9);
         margin-left: 8px;
         margin-right: 8px;
         .logo{
@@ -167,6 +171,11 @@ header {
             }
             .one-world img {
                 width: 41px;
+            }
+        }
+        li.menu-title{
+            .hl{
+                top: 21px;
             }
         }
         .menu.small-device{
@@ -185,14 +194,20 @@ header {
 
 @media screen and (min-width:1200px){
     header {
-        margin-left: 50px;
-        margin-right: 50px;
+        background: rgba(255, 255, 255, 0.9);
+        margin-left: 8px;
+        margin-right: 8px;
         .logo{
             .ram img{
-                width: 98px;
+                width: 125px;
             }
             .one-world img {
-                width: 41px;
+                width: 52px;
+            }
+        }
+        li.menu-title{
+            .hl{
+                top: 28px;
             }
         }
         .menu.small-device{

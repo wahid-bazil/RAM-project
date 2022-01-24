@@ -17,19 +17,16 @@ function Home() {
     const [count, setCount] = useState(0);
     const image = ['./assets/images/home.png']
 
-
     return (
         <div className="home bg-white">
-            <div className="top-side pb-0 pt-2">
-                <div className='pr-md-5 pl-md-5'>
-                    <Header />
-                </div>
-                <div className="p-5 mt-5 mb-4">
-                    <div className="col-md-10 ">
+            <div className="top-side">
+                <Header />
+                <div className="top-side-container">
+                    <div className="description mt-lg-5 pt-5 ">
                         <h1 className="title">
                             BUSINESS CLASS
                         </h1>
-                        <p className="col-7">
+                        <p className="">
                             <span>
                                 Voyagez en Business Class aves Royal Air Maroc et découvrez Nos nouveaux standards de confort à bord
                             </span>
@@ -39,29 +36,29 @@ function Home() {
                             faites l’expérience d’un voyage alliant confort, Plaisir et sérénité.
                         </p>
                     </div>
-                    <div className="form mt-5 pt-4">
+                    <form>
                         <h6>
                             SURCLASSEMENT
                         </h6>
                         <div className="form-container">
-                            <div className="col-3 border-field">
-                                <div className="label ">
+                            <div className="col-lg-3 border-field">
+                                <div className="label">
                                     <i>
-                                        <FaPlaneDeparture />
+                                        <FaHashtag />
                                     </i>
-                                    <span> Aéroport de départ</span>
+                                    <span>Aéroport de départ</span>
                                 </div>
-                                <div>
-                                    <TextField
-                                        id="standard-multiline-flexible"
-                                        value={'Casablanca Mohamed v (CMN)'}
-                                        variant="standard"
-                                        margin="normal"
-                                        fullWidth
-                                    />
-                                </div>
+                                <TextField
+                                    id="standard-multiline-flexible"
+                                    multiline
+                                    maxRows={4}
+                                    value={'Casablanca Mohamed V (CMN)'}
+                                    variant="standard"
+                                    margin="normal"
+                                    fullWidth
+                                />
                             </div>
-                            <div className="col-3 border-field">
+                            <div className="col-lg-3 border-field">
                                 <div className="label">
                                     <i>
                                         <FaHashtag />
@@ -78,7 +75,7 @@ function Home() {
                                     fullWidth
                                 />
                             </div>
-                            <div className="col-3 border-field">
+                            <div className="col-lg-3 border-field">
                                 <div className="label">
                                     <i>
                                         <MdFamilyRestroom />
@@ -95,39 +92,34 @@ function Home() {
                                     fullWidth
                                 />
                             </div>
-                            <div className="col-3 field">
-                                <div className="d-flex justify-content-between">
-                                    <div>
-                                        <div className="label">
-                                            <i>
-                                                <BsCurrencyExchange />
-                                            </i>
-                                            <span>Devise</span>
-                                        </div>
-                                        <TextField
-                                            id="standard-multiline-flexible"
-                                            multiline
-                                            maxRows={4}
-                                            value={'MAD'}
-                                            variant="standard"
-                                            margin="normal"
-                                            fullWidth
-                                        />
-                                    </div>
-                                    <button className="btn btn-ram-primary ">
-                                        <MdNavigateNext />
-                                    </button>
+                            <div className="col-lg-3 field">
+                                <div className="label">
+                                    <i>
+                                        <BsCurrencyExchange />
+                                    </i>
+                                    <span>Devise</span>
                                 </div>
+                                <TextField
+                                    id="standard-multiline-flexible"
+                                    multiline
+                                    maxRows={4}
+                                    value={'MAD'}
+                                    variant="standard"
+                                    margin="normal"
+                                    fullWidth
+                                />
                             </div>
+                            <button className="btn btn-ram-primary large-device">
+                                <MdNavigateNext />
+                            </button>
+                            <button className="btn btn-ram-primary small-device ">
+                                Suivant
+                            </button>
                         </div>
-                    </div>
-
+                    </form>
                 </div>
-
             </div>
-            <div>
-                <SliderIdex />
-            </div>
+           {/* <SliderIdex />*/}
         </div>
     );
 }

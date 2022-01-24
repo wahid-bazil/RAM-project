@@ -1,0 +1,14 @@
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .App {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .App {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

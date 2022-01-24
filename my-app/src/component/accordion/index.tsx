@@ -7,7 +7,7 @@ const Accordions: React.FC<{ expand: (index: number) => void, active: boolean, c
     function PhaseLabelClasse(active: boolean, completed: boolean) {
         if (active) {
 
-            return 'active'
+            return ' active'
 
         } else if (completed) {
 
@@ -21,11 +21,11 @@ const Accordions: React.FC<{ expand: (index: number) => void, active: boolean, c
     function SpanClasse(active: boolean, completed: boolean) {
         if (active) {
 
-            return 'active'
+            return 'active '
 
         } else if (completed) {
 
-            return 'completed'
+            return 'completed '
         }
         else {
             return ''
@@ -47,17 +47,15 @@ const Accordions: React.FC<{ expand: (index: number) => void, active: boolean, c
     }
 
     return (
-        <div className="accordion d-flex justify-content-between ">
+        <div className="accordion d-flex justify-content-between">
             <h6 className={PhaseLabelClasse(props.active, props.completed)}>
                 {props.phaseLabel}
             </h6>
             <span className={SpanClasse(props.active, props.completed)} />
-            {/*} <i onClick={()=>props.expand(props.index)} className={IconClasse(props.active, props.completed)}>
-                <MdNavigateNext />
-    </i>*/}
-            <i className={IconClasse(props.active, props.completed)}>
+            <i  className={IconClasse(props.active, props.completed)}>
                 <MdNavigateNext />
             </i>
+            {/*onClick={() => props.expand(props.index)}*/}
         </div>
     )
 }

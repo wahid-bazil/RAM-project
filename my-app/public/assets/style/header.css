@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 .button-basic {
   color: white !important;
-  font-family: "El Messiri", sans-serif !important;
+  font-family: "Philosopher", sans-serif !important;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
@@ -13,14 +14,13 @@
 }
 
 header {
-  margin-top: 10px !important;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   position: relative;
-  background: rgba(255, 255, 255, 0.9);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  top: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   display: block;
   margin: auto;
 }
@@ -77,11 +77,10 @@ header .menu-large-device li.menu-title h6 {
 }
 
 header .menu-large-device li.menu-title .hl {
-  border-bottom: 2.5px solid #d84755;
+  border-bottom: 2.5px solid #d5123a;
   border-radius: 5px;
   width: 100%;
   position: relative;
-  top: 25px;
   border-radius: 5px;
 }
 
@@ -116,6 +115,7 @@ header .menu-large-device li.email-icon i {
 /**********Responsive/*********/
 @media screen and (max-width: 300px) {
   header {
+    background-color: white;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -132,6 +132,7 @@ header .menu-large-device li.email-icon i {
 
 @media screen and (min-width: 300px) and (max-width: 430px) {
   header {
+    background-color: white;
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -148,6 +149,7 @@ header .menu-large-device li.email-icon i {
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
   header {
+    background-color: white;
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -164,6 +166,7 @@ header .menu-large-device li.email-icon i {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   header {
+    background-color: white;
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -180,6 +183,7 @@ header .menu-large-device li.email-icon i {
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header {
+    background: rgba(255, 255, 255, 0.9);
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -188,6 +192,9 @@ header .menu-large-device li.email-icon i {
   }
   header .logo .one-world img {
     width: 41px;
+  }
+  header li.menu-title .hl {
+    top: 21px;
   }
   header .menu.small-device i {
     font-size: 20px;
@@ -204,14 +211,18 @@ header .menu-large-device li.email-icon i {
 
 @media screen and (min-width: 1200px) {
   header {
-    margin-left: 50px;
-    margin-right: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-left: 8px;
+    margin-right: 8px;
   }
   header .logo .ram img {
-    width: 98px;
+    width: 125px;
   }
   header .logo .one-world img {
-    width: 41px;
+    width: 52px;
+  }
+  header li.menu-title .hl {
+    top: 28px;
   }
   header .menu.small-device i {
     font-size: 20px;

@@ -51,7 +51,7 @@ const useStyles = makeStyles({
 
 const Surclassement = () => {
     const classes = useStyles();
-    const [currentStep, setCurrentStep] = React.useState(1);
+    const [currentStep, setCurrentStep] = React.useState(0);
     const [stepState, setStepState] = React.useState<{ [index: number]: boolean }>({
         0: true,
         1: false,
@@ -93,52 +93,50 @@ const Surclassement = () => {
 
 
     return (
-        <div>
+        <div className="surclassement ">
             <div className=" header-test-0">
                 <Header />
             </div>
-            <div className="container surclassement">
-                <div className="">
-                    <div className="title">
-                        <h3>
-                            SURCLASSEMENT
-                        </h3>
-                    </div>
-                    <div className="phases">
-                        <div className="small-device">
-                            <div className="stepper-mobile">
-                                <div className="d-flex justify-content-between">
-                                    {steps.map((step, index) => (
-                                        <div>
-                                            <IconLabel icon={icons[index]} active={currentStep == index} completed={currentStep > index} />
-                                        </div>
-                                    ))}
-                                </div>
-                                <h6 className="">{steps[currentStep].description}</h6>
-                            </div>
-                            <div className="mt-4">
-                                {
-                                    phases[currentStep]
-                                }
-                            </div>
-                        </div>
-                        <div className="large-device">
-                            <div className="test-image-0">
-                                <img src="./assets/images/image-left.jpg" alt='' />
-                            </div>
-                            {steps.map((step, index) => (
-                                <div key={index} >
-                                    <div className='stepper-0'>
+            <div className="surclassement-container">
+                <div className="title">
+                    <h3>
+                        SURCLASSEMENT
+                    </h3>
+                </div>
+                <div className="phases">
+                    <div className="small-device">
+                        <div className="stepper-mobile">
+                            <div className="d-flex justify-content-between">
+                                {steps.map((step, index) => (
+                                    <div>
                                         <IconLabel icon={icons[index]} active={currentStep == index} completed={currentStep > index} />
-                                        <Connecteur active={currentStep == index} completed={currentStep > index} />
                                     </div>
-                                    <Accordions expand={expand} index={index} phaseLabel={steps[currentStep].description} active={currentStep == index} completed={currentStep > index} />
-                                    <div className={stepState[index] ? 'phase-container expanded' : 'phase-container '}>
-                                        {currentStep >= index ? phases[index] : null}
-                                    </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+                            <h6 className="">{steps[currentStep].description}</h6>
                         </div>
+                        <div className="mt-4">
+                            {
+                                phases[currentStep]
+                            }
+                        </div>
+                    </div>
+                    <div className="large-device mt-3">
+                        <div className="test-image-0">
+                            <img src="./assets/images/image-left.jpg" alt='' />
+                        </div>
+                        {steps.map((step, index) => (
+                            <div key={index} >
+                                <div className='stepper-0'>
+                                    <IconLabel icon={icons[index]} active={currentStep == index} completed={currentStep > index} />
+                                    <Connecteur active={currentStep == index} completed={currentStep > index} />
+                                </div>
+                                <Accordions expand={expand} index={index} phaseLabel={steps[index].description} active={currentStep == index} completed={currentStep > index} />
+                                <div className={stepState[index] ? 'phase-container expanded' : 'phase-container'}>
+                                    {currentStep >= index ? phases[index] : null}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

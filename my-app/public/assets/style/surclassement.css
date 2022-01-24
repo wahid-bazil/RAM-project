@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 .button-basic {
   color: white !important;
-  font-family: "El Messiri", sans-serif !important;
+  font-family: "Philosopher", sans-serif !important;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
@@ -28,9 +29,9 @@
 .surclassement .title {
   /*background-color: rgba(255, 255, 255, 0.5);*/
   background-color: white;
-  font-family: "El Messiri", sans-serif;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Philosopher", sans-serif;
+  -webkit-box-shadow: rgba(190, 110, 110, 0.24) 0px 3px 8px;
+          box-shadow: rgba(190, 110, 110, 0.24) 0px 3px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +50,7 @@
 }
 
 .surclassement .phases .phase-title {
-  font-family: "El Messiri", sans-serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 18px;
   font-weight: 700;
   position: relative;
@@ -106,12 +107,13 @@
 }
 
 .surclassement .phases .phase-container {
-  margin-top: 30px;
+  margin-top: 0px;
   background-color: white;
   border-radius: 10px;
   opacity: 1;
   height: 0px;
   position: relative;
+  top: 18px;
 }
 
 .surclassement .phases .phase-container.expanded {
@@ -140,7 +142,7 @@
 }
 
 .surclassement .phases .small-device .stepper-mobile h6 {
-  font-family: "El Messiri", sans-serif;
+  font-family: "Philosopher", sans-serif;
   font-weight: normal;
   text-align: center;
   color: #c20831;
@@ -396,118 +398,137 @@
 
 /* responsive*/
 @media screen and (max-width: 300px) {
-  .surclassement {
+  .surclassement .surclassement-container .title {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .surclassement .surclassement-container .title h3 {
+    font-size: 15px;
+  }
+  .surclassement .surclassement-container .phases .small-device {
+    background-color: white;
+  }
+  .surclassement .surclassement-container .phases .small-device .stepper-mobile h6 {
+    font-size: 13px;
+  }
+  .surclassement .surclassement-container .phases .phase-1 .form-container h6 {
+    font-size: 12px;
+  }
+  .surclassement .surclassement-container .phases .phase-1 p {
+    font-size: 11px;
+  }
+  .surclassement .surclassement-container .phases .phase-1 .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 42px !important;
+  }
+  .surclassement .surclassement-container .phases .pahse-2 .section {
     padding: 0px !important;
   }
 }
 
-@media screen and (max-width: 340px) {
-  .surclassement .title {
-    margin-top: 12px;
-    margin-bottom: 12px;
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  .surclassement .surclassement-container {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .surclassement .surclassement-container .title {
     padding-top: 8px;
     padding-bottom: 8px;
+    margin-top: 28px;
+    margin-bottom: 20px;
   }
-  .surclassement .title h3 {
-    font-size: 15px;
-  }
-  .surclassement .phases .small-device {
-    background-color: white;
-  }
-  .surclassement .phases .small-device .stepper-mobile h6 {
-    font-size: 13px;
-  }
-  .surclassement .phases .phase-1 .form-container h6 {
-    font-size: 12px;
-  }
-  .surclassement .phases .phase-1 p {
-    font-size: 11px;
-  }
-}
-
-@media screen and (min-width: 340px) and (max-width: 430px) {
-  .surclassement .title {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .surclassement .title h3 {
+  .surclassement .surclassement-container .title h3 {
     font-size: 16px;
   }
-  .surclassement .phases .small-device {
+  .surclassement .surclassement-container .phases .small-device {
     background-color: white;
   }
-  .surclassement .phases .small-device .stepper-mobile h6 {
+  .surclassement .surclassement-container .phases .small-device .stepper-mobile h6 {
     font-size: 14px;
   }
-  .surclassement .phases .phase-1 .form-container h6 {
+  .surclassement .surclassement-container .phases .phase-1 .form-container h6 {
     font-size: 12px;
   }
-  .surclassement .phases .phase-1 p {
+  .surclassement .surclassement-container .phases .phase-1 p {
     font-size: 13px;
+  }
+  .surclassement .surclassement-container .phases .phase-1 .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 42px !important;
   }
 }
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
-  .surclassement .title {
-    margin-top: 12px;
-    margin-bottom: 12px;
+  .surclassement .surclassement-container {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .surclassement .surclassement-container .title {
+    margin-top: 28px;
+    margin-bottom: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .surclassement .title h3 {
+  .surclassement .surclassement-container .title h3 {
     font-size: 17px;
   }
-  .surclassement .phases .small-device {
+  .surclassement .surclassement-container .phases .small-device {
     background-color: white;
   }
-  .surclassement .phases .small-device .stepper-mobile h6 {
+  .surclassement .surclassement-container .phases .small-device .stepper-mobile h6 {
     font-size: 15px;
   }
-  .surclassement .phases .phase-1 .form-container h6 {
+  .surclassement .surclassement-container .phases .phase-1 .form-container h6 {
     font-size: 14px;
   }
-  .surclassement .phases .phase-1 p {
+  .surclassement .surclassement-container .phases .phase-1 p {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .surclassement .title {
-    margin-top: 12px;
-    margin-bottom: 12px;
+  .surclassement .surclassement-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .surclassement .surclassement-container .title {
+    margin-top: 28px;
+    margin-bottom: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .surclassement .title h3 {
+  .surclassement .surclassement-container .title h3 {
     font-size: 17px;
   }
-  .surclassement .phases .small-device {
+  .surclassement .surclassement-container .phases .small-device {
     background-color: white;
   }
-  .surclassement .phases .small-device .stepper-mobile h6 {
+  .surclassement .surclassement-container .phases .small-device .stepper-mobile h6 {
     font-size: 14px;
   }
-  .surclassement .phases .phase-1 .form-container h6 {
+  .surclassement .surclassement-container .phases .phase-1 .form-container h6 {
     font-size: 14px;
   }
-  .surclassement .phases .phase-1 p {
+  .surclassement .surclassement-container .phases .phase-1 p {
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .surclassement .phases .small-device {
+  .surclassement .surclassement-container {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+  .surclassement .surclassement-container .phases .small-device {
     display: none;
   }
-  .surclassement .title {
-    margin-top: 30px;
+  .surclassement .surclassement-container .title {
+    margin-top: 35px;
     margin-bottom: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .surclassement .title h3 {
+  .surclassement .surclassement-container .title h3 {
     font-size: 25px;
   }
 }

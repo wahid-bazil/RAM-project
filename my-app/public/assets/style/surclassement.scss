@@ -6,7 +6,7 @@
         /*background-color: rgba(255, 255, 255, 0.5);*/
         background-color: white;
         font-family:$font-museo;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(190, 110, 110, 0.24) 0px 3px 8px;
         display: flex;
         justify-content: center;
         color: #d84755;
@@ -71,12 +71,14 @@
             }
         }
         .phase-container{
-            margin-top: 30px;
+            margin-top: 0px;
             background-color: white;
             border-radius: 10px;
             opacity: 1;
             height: 0px; 
-            position: relative;      
+            position: relative;     
+            top: 18px;
+ 
         }
         .phase-container.expanded{
             padding: 15px;
@@ -349,99 +351,114 @@
 /* responsive*/
 @media screen and (max-width:300px) {
     .surclassement{
-        padding: 0px !important;
-    }
-}
-@media screen and (max-width:340px) {
-    .surclassement{
-        .title {
-            margin-top: 12px;
-            margin-bottom: 12px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            h3{
-                font-size: 15px;
+        .surclassement-container{
+            .title {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-top: 28px;
+                margin-bottom: 20px;
+                h3{
+                    font-size: 15px;
+                }
             }
-        }
-        .phases{
-            .small-device{
-                background-color: white;
-                .stepper-mobile{
-                    h6{
-                       font-size:13px;
+            .phases{
+                .small-device{
+                    background-color: white;
+                    .stepper-mobile{
+                        h6{
+                           font-size:13px;
+                        }
+                    }
+                }
+                .phase-1 {
+                    .form-container h6 {
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size:11px;
+                    }
+                    .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+                        height: 42px!important;
+                    }
+                }
+                .pahse-2 {
+                    .section{
+                        padding: 0px !important;
                     }
                 }
             }
-            .phase-1 {
-                .form-container h6 {
-                    font-size: 12px;
-                }
-                p{
-                    font-size:11px;
-                }
-            }
         }
-
     }
 }
-@media screen and (min-width:340px) and (max-width:430px) {
+
+@media screen and (min-width:300px) and (max-width:430px) {
     .surclassement{
-        .title {
-            margin-top: 12px;
-            margin-bottom: 12px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            h3{
-                font-size: 16px;
+        .surclassement-container{
+            margin-left: 12px;
+            margin-right: 12px;
+            .title {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-top: 28px;
+                margin-bottom: 20px;
+                h3{
+                    font-size: 16px;
+                }
             }
-        }
-        .phases{
-            .small-device{
-                background-color: white;
-                .stepper-mobile{
-                    h6{
-                       font-size:14px;
+            .phases{
+                .small-device{
+                    background-color: white;
+                    .stepper-mobile{
+                        h6{
+                           font-size:14px;
+                        }
+                    }
+                }
+                .phase-1 {
+                    .form-container h6 {
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size:13px;
+                    }
+                    .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+                        height: 42px!important;
                     }
                 }
             }
-            .phase-1 {
-                .form-container h6 {
-                    font-size: 12px;
-                }
-                p{
-                    font-size:13px;
-                }
-            }
         }
-
     }
 }
 @media screen and (min-width:430px) and (max-width:768px) {
     .surclassement{
-        .title {
-            margin-top: 12px;
-            margin-bottom: 12px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            h3{
-                font-size: 17px;
+        .surclassement-container{
+            margin-left: 12px;
+            margin-right: 12px;
+            .title {
+                margin-top: 28px;
+                margin-bottom: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                h3{
+                    font-size: 17px;
+                }
             }
-        }
-        .phases{
-            .small-device{
-                background-color: white;
-                .stepper-mobile{
-                    h6{
-                       font-size:15px;
+            .phases{
+                .small-device{
+                    background-color: white;
+                    .stepper-mobile{
+                        h6{
+                           font-size:15px;
+                        }
                     }
                 }
-            }
-            .phase-1 {
-                .form-container h6 {
-                    font-size: 14px;
-                }
-                p{
-                    font-size:13px;
+                .phase-1 {
+                    .form-container h6 {
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size:13px;
+                    }
                 }
             }
         }
@@ -449,30 +466,34 @@
 }
 @media screen and (min-width:768px) and (max-width:992px) {
     .surclassement{
-        .title {
-            margin-top: 12px;
-            margin-bottom: 12px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            h3{
-                font-size: 17px;
+        .surclassement-container{
+            margin-left: 50px;
+            margin-right: 50px;
+            .title {
+                margin-top: 28px;
+                margin-bottom: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                h3{
+                    font-size: 17px;
+                }
             }
-        }
-        .phases{
-            .small-device{
-                background-color: white;
-                .stepper-mobile{
-                    h6{
-                       font-size:14px;
+            .phases{
+                .small-device{
+                    background-color: white;
+                    .stepper-mobile{
+                        h6{
+                           font-size:14px;
+                        }
                     }
                 }
-            }
-            .phase-1 {
-                .form-container h6 {
-                    font-size: 14px;
-                }
-                p{
-                    font-size:15px;
+                .phase-1 {
+                    .form-container h6 {
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size:15px;
+                    }
                 }
             }
         }
@@ -480,18 +501,22 @@
 }
 @media screen and (min-width:992px)  {
     .surclassement{
-        .phases {
-            .small-device{
-                display: none;
+        .surclassement-container{
+            margin-left: 140px;
+            margin-right: 140px;
+            .phases {
+                .small-device{
+                    display: none;
+                }
             }
-        }
-        .title {
-            margin-top: 30px;
-            margin-bottom: 17px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            h3{
-                font-size: 25px;
+            .title {
+                margin-top: 35px;
+                margin-bottom: 17px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                h3{
+                    font-size: 25px;
+                }
             }
         }
     }

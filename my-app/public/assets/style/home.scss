@@ -4,66 +4,51 @@
         background-image: url('../images/img-banner.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
-
+        .top-side-container{
+            display: flex;
+        }
         h1.title{
-            font-family: Museo;
-            font-weight: normal;
-            font-size: 60px;
+            font-family: $font-museo;
+            font-weight: 700;
             text-align: left;
             color: #cf0a3d;
         }
         h1.title::before{
             background-image: url('../images/group-270.png');
-            background-size: 61px 61px;
             display: inline-block;
-            width: 61px;
-            height: 75px;
             background-repeat: no-repeat;
             content: "";
-            position: relative;
-            bottom: 8px;
-            left: 13px;
+            position: absolute;
         }
         p{
-            font-family: Museo;
+            font-family: $font-museo;
             font-weight: normal;
-            font-size: 20px;
             color: #050505;
-            margin-left: 61px;
-            padding: 0px;
             text-align: start;
             span{
-                font-weight: bold;
+                font-weight: 700;
                 padding-bottom: 5px;
-                transform: scale(1.1);
+                transform: scale(1.5);
             }
         }
-        .form {
-            .border-field{
-                border-right: $border-primary;
-            }
+        form {
             h6{
                 background: #CD2043 0% 0% no-repeat padding-box;
                 box-shadow: 0px 3px 6px #00000029;
                 border-radius: 22px 22px 0px 0px;
                 opacity: 1;
                 width: max-content;
-                padding: 10px 19px 10px 19px;
+                padding: 11px 37px 10px 37px;
                 color: white;
                 margin: 0px;
             }
             .form-container{
+                position: relative;
                 display: flex;
-                background: transparent;
-                filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
-                /* Note: currently only Safari supports backdrop-filter */
-                backdrop-filter: blur(27.60059928894043px);
-                --webkit-backdrop-filter: blur(27.60059928894043px);
-                background-color: rgba(255, 255, 255, 0.3);
-                box-shadow: 1px 3px 16px #0000003b;
                 opacity: 1;
-                padding: 15px 12px 15px 12px;
-                border-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
             }
             .label{
                 display: flex;
@@ -87,10 +72,14 @@
                     letter-spacing: 0px;
                     color: #050505;
                     text-shadow: 0px 3px 6px #00000029;
-                    font-weight: 700;
+                    font-weight: 700; 
                 }
             }
-            .btn-ram-primary{
+            .btn-ram-primary.large-device{
+                position: absolute!important;
+                right: 5px;
+                height: 80%;
+                bottom: 14px;
                 background: transparent linear-gradient(
                     0deg
                     , #C20831 0%, #F87988 100%) 0% 0% no-repeat padding-box;
@@ -106,8 +95,416 @@
                 }
                 
             }
+            .btn-ram-primary.small-device{
+                background: transparent linear-gradient(
+                    0deg
+                    , #C20831 0%, #F87988 100%) 0% 0% no-repeat padding-box;
+                box-shadow: 0px 10px 26px #a8012359;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                
+                    
+            }
         }
     }
 }
 
 /****** responsive *******/
+@media screen and (max-width:300px){
+    .top-side{
+        background-position-x: -675px;
+        .top-side-container{
+            flex-direction: column-reverse;
+            .description{
+                margin-left: 3%;
+                margin-right:3% ;
+            }
+            h1.title{
+                font-size: 25px;
+                position: relative;
+                padding-left: 26px;
+            }
+            h1.title::before{
+                background-size: 40px 40px;
+                bottom: 5px;
+                width: 40px;
+                height: 40px;   
+                top: -21px;
+                left: -2px;
+            }
+            p{
+                font-size: 13px;
+                padding-left: 0px;
+            }
+            form{
+                margin-left: 3%;
+                margin-right:3% ;
+                margin-top: 50px;
+                h6{
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                    font-size: 13px;
+                }
+                .form-container > div {
+                    margin-bottom: 25px;
+                }
+                .form-container{
+                    background-color: white;
+                    padding: 20px 0px 0px 0px;
+                    flex-direction: column;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                    .btn-ram-primary.large-device{
+                        display: none;
+                    }
+                }
+                .label{
+                    span{
+                        font-size: 13px;
+                    }
+                }
+                .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+                    font-size: 11px!important;
+                }
+                .css-66dh3a-MuiInputBase-input-MuiInput-input {
+                    font-size: 11px!important;
+                }
+        
+            }
+        }
+
+    }
+
+
+}
+@media screen and (min-width:300px) and (max-width:430px){
+    .top-side{
+        .top-side-container{
+            flex-direction: column-reverse;
+            .description{
+                margin-left: 5%;
+                margin-right:5% ;
+            }
+        }
+        background-position-x: -675px;
+        h1.title{
+            font-size: 25px;
+            position: relative;
+            padding-left: 36px;
+           
+        }
+        h1.title::before{
+            background-size: 45px 45px;
+            bottom: 5px;
+            width: 45px;
+            height: 45px;   
+            top: -24px;
+            left: 6px;
+        }
+        p{
+            font-size: 13px;
+            padding-left: 6px;
+        }
+    }
+    form{
+        margin-left: 5%;
+        margin-right:5% ;
+        margin-top: 50px;
+        h6{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            font-size: 13px;
+        }
+        .form-container > div {
+            margin-bottom: 25px;
+        }
+        .form-container{
+            background-color: white;
+            padding: 20px 0px 0px 0px;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            .btn-ram-primary.large-device{
+                display: none;
+            }
+        }
+        .label{
+            span{
+                font-size: 13px;
+            }
+        }
+        .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+            font-size: 11px!important;
+        }
+        .css-66dh3a-MuiInputBase-input-MuiInput-input {
+            font-size: 11px!important;
+        }
+
+    }
+}
+@media screen and (min-width:430px) and (max-width:768px){
+    .top-side{
+        .top-side-container{
+            flex-direction: column-reverse;
+            .description{
+                margin-left: 5%;
+                margin-right:5% ;
+            }
+        }
+        background-position-x: -534px;
+        h1.title{
+            font-size: 30px;
+            position: relative;
+            padding-left: 36px;
+
+        }
+        h1.title::before{
+            background-size: 60px 60px;
+            bottom: 5px;
+            width: 60px;
+            height: 60px;   
+            left: -5px;
+            bottom: 8px;
+        }
+        p{
+            padding-left: 18px;
+        }
+    }
+    form{
+        margin-left: 5%;
+        margin-right:5% ;
+        margin-top: 50px;
+        h6{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        .form-container > div {
+            margin-bottom: 25px;
+        }
+        .form-container{
+            background-color: white;
+            padding: 20px 0px 0px 0px;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            .btn-ram-primary.large-device{
+                display: none;
+            }
+        }
+        .label{
+            span{
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .top-side{
+        .top-side-container{
+            flex-direction: column-reverse;
+            .description{
+                margin-top: 25px;
+                margin-left: 5%;
+                margin-right:10% ;
+            }
+        }
+        background-position-x: -675px;
+        h1.title{
+            font-size: 30px;
+            position: relative;
+            padding-left: 36px;
+        }
+        h1.title::before{
+            background-size: 60px 60px;
+            bottom: 5px;
+            width: 60px;
+            height: 60px;   
+            left: -5px;
+            bottom: 8px;
+        }
+        p{
+            padding-left: 30px;
+        }
+    }
+    form{
+        margin-left: 5%;
+        margin-right:5% ;
+        margin-top: 50px;
+        h6{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        .form-container > div {
+            margin-bottom: 25px;
+        }
+        .form-container{
+            background-color: white;
+            padding: 20px 0px 0px 0px;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            .btn-ram-primary.large-device{
+                display: none;
+            }
+        }
+        .label{
+            span{
+                font-size: 17px;
+            }
+        }
+
+    }
+}
+@media screen and (min-width:992px) and (max-width:1090px){
+.home
+    .top-side{
+        .top-side-container{
+            .description{
+                width: 70%;
+            }
+            form {
+                .label span{
+                    font-size: 13px;
+                    }
+                }
+                .btn-ram-primary.small-device{
+                    display: none;
+                }
+            }
+        }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+.home{
+    .top-side-container{
+        flex-direction: column;
+        .description{
+            width: 60%;
+            h1.title{
+                position: relative;
+                padding-left: 36px;
+                font-size: 35px;
+            }
+            h1.title::before{
+                background-size: 50px 50px;
+                width: 50px;
+                height: 50px;
+                top: -24px;
+                left: 2px;
+            }
+            p{
+                padding-left: 48px;
+                
+            }
+        }
+        form{
+            margin-top: 45px;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-bottom: 25px;
+            .border-field{
+                border-right: $border-primary;
+            }
+            h6{
+               
+                
+            }
+            .label{
+                span{
+                    
+                }
+            }
+            .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+                font-size: 12px!important;
+            }
+            .css-66dh3a-MuiInputBase-input-MuiInput-input {
+                font-size: 12px!important;
+            }
+            
+        }
+        .form-container{
+            padding: 15px 12px 15px 12px;
+            flex-direction: row;
+            background: transparent;
+            filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+            /* Note: currently only Safari supports backdrop-filter */
+            backdrop-filter: blur(27.60059928894043px);
+            --webkit-backdrop-filter: blur(27.60059928894043px);
+            background-color: rgba(255, 255, 255, 0.06);
+            /* (plus shape's fill blended on top as a separate layer with 72.98% opacity) */
+            box-shadow: 1px 3px 16px #0000003b;
+            .btn-ram-primary.small-device{
+                display: none;
+            }
+           
+        }
+    }
+
+}
+}
+@media screen and (min-width:1200px){
+    .home{
+        .top-side-container{
+            flex-direction: column;
+            .description{
+                width: 60%;
+            }
+        }
+        h1.title{
+            position: relative;
+            padding-left: 36px;
+            font-size: 44px;
+        }
+        h1.title::before{
+            background-size: 60px 60px;
+            width: 60px;
+            height: 60px;
+            top: -28px;
+            left: -2px;
+        }
+        p{
+            padding-left: 48px;
+            font-size: 21px;
+        }
+        form{
+            margin-top: 45px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 25px;
+            .border-field{
+                border-right: $border-primary;
+            }
+            h6{
+               
+                
+            }
+            .label{
+                span{
+                   
+                }
+            }
+            .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+                font-size: 12px!important;
+            }
+            .css-66dh3a-MuiInputBase-input-MuiInput-input {
+                font-size: 12px!important;
+            }
+        }
+        .form-container{
+            padding: 15px 12px 15px 12px;
+            flex-direction: row;
+            background: transparent;
+            filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+            /* Note: currently only Safari supports backdrop-filter */
+            backdrop-filter: blur(27.60059928894043px);
+            --webkit-backdrop-filter: blur(27.60059928894043px);
+            background-color: rgba(255, 255, 255, 0.06);
+            /* (plus shape's fill blended on top as a separate layer with 72.98% opacity) */
+            box-shadow: 1px 3px 16px #0000003b;
+            .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+                font-size: 13px!important;
+            }
+            .css-66dh3a-MuiInputBase-input-MuiInput-input {
+                font-size: 13px!important;
+            }
+            .btn-ram-primary.small-device{
+                display: none;
+            }
+           
+        }
+    }
+
+}
+

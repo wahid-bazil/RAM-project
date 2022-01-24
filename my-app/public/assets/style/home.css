@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 .button-basic {
   color: white !important;
-  font-family: "El Messiri", sans-serif !important;
+  font-family: "Philosopher", sans-serif !important;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
@@ -18,49 +19,42 @@
   background-attachment: fixed;
 }
 
+.home .top-side .top-side-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .home .top-side h1.title {
-  font-family: Museo;
-  font-weight: normal;
-  font-size: 60px;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
   text-align: left;
   color: #cf0a3d;
 }
 
 .home .top-side h1.title::before {
   background-image: url("../images/group-270.png");
-  background-size: 61px 61px;
   display: inline-block;
-  width: 61px;
-  height: 75px;
   background-repeat: no-repeat;
   content: "";
-  position: relative;
-  bottom: 8px;
-  left: 13px;
+  position: absolute;
 }
 
 .home .top-side p {
-  font-family: Museo;
+  font-family: "Philosopher", sans-serif;
   font-weight: normal;
-  font-size: 20px;
   color: #050505;
-  margin-left: 61px;
-  padding: 0px;
   text-align: start;
 }
 
 .home .top-side p span {
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 5px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
-.home .top-side .form .border-field {
-  border-right: 1px solid #7070707d;
-}
-
-.home .top-side .form h6 {
+.home .top-side form h6 {
   background: #CD2043 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
@@ -69,31 +63,23 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 10px 19px 10px 19px;
+  padding: 11px 37px 10px 37px;
   color: white;
   margin: 0px;
 }
 
-.home .top-side .form .form-container {
+.home .top-side form .form-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: transparent;
-  -webkit-filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
-          filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
-  /* Note: currently only Safari supports backdrop-filter */
-  -webkit-backdrop-filter: blur(27.6006px);
-          backdrop-filter: blur(27.6006px);
-  --webkit-backdrop-filter: blur(27.60059928894043px);
-  background-color: rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 1px 3px 16px #0000003b;
-          box-shadow: 1px 3px 16px #0000003b;
   opacity: 1;
-  padding: 15px 12px 15px 12px;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.home .top-side .form .label {
+.home .top-side form .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +88,7 @@
           justify-content: start;
 }
 
-.home .top-side .form .label i {
+.home .top-side form .label i {
   background: #FCD0DD 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 4.5px 9px;
@@ -110,12 +96,12 @@
   color: #E35D85;
 }
 
-.home .top-side .form .label i svg {
+.home .top-side form .label i svg {
   position: relative;
   bottom: 2px;
 }
 
-.home .top-side .form .label span {
+.home .top-side form .label span {
   margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +116,11 @@
   font-weight: 700;
 }
 
-.home .top-side .form .btn-ram-primary {
+.home .top-side form .btn-ram-primary.large-device {
+  position: absolute !important;
+  right: 5px;
+  height: 80%;
+  bottom: 14px;
   background: transparent -webkit-gradient(linear, left bottom, left top, from(#C20831), to(#F87988)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(0deg, #C20831 0%, #F87988 100%) 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 10px 26px #a8012359;
@@ -142,10 +132,424 @@
   padding: 2.5px 5px;
 }
 
-.home .top-side .form .btn-ram-primary svg {
+.home .top-side form .btn-ram-primary.large-device svg {
   position: relative;
   bottom: 5px;
 }
 
+.home .top-side form .btn-ram-primary.small-device {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#C20831), to(#F87988)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #C20831 0%, #F87988 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 10px 26px #a8012359;
+          box-shadow: 0px 10px 26px #a8012359;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
 /****** responsive *******/
+@media screen and (max-width: 300px) {
+  .top-side {
+    background-position-x: -675px;
+  }
+  .top-side .top-side-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .top-side .top-side-container .description {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .top-side .top-side-container h1.title {
+    font-size: 25px;
+    position: relative;
+    padding-left: 26px;
+  }
+  .top-side .top-side-container h1.title::before {
+    background-size: 40px 40px;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
+    top: -21px;
+    left: -2px;
+  }
+  .top-side .top-side-container p {
+    font-size: 13px;
+    padding-left: 0px;
+  }
+  .top-side .top-side-container form {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 50px;
+  }
+  .top-side .top-side-container form h6 {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-size: 13px;
+  }
+  .top-side .top-side-container form .form-container > div {
+    margin-bottom: 25px;
+  }
+  .top-side .top-side-container form .form-container {
+    background-color: white;
+    padding: 20px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .top-side .top-side-container form .form-container .btn-ram-primary.large-device {
+    display: none;
+  }
+  .top-side .top-side-container form .label span {
+    font-size: 13px;
+  }
+  .top-side .top-side-container form .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    font-size: 11px !important;
+  }
+  .top-side .top-side-container form .css-66dh3a-MuiInputBase-input-MuiInput-input {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  .top-side {
+    background-position-x: -675px;
+  }
+  .top-side .top-side-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .top-side .top-side-container .description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .top-side h1.title {
+    font-size: 25px;
+    position: relative;
+    padding-left: 36px;
+  }
+  .top-side h1.title::before {
+    background-size: 45px 45px;
+    bottom: 5px;
+    width: 45px;
+    height: 45px;
+    top: -24px;
+    left: 6px;
+  }
+  .top-side p {
+    font-size: 13px;
+    padding-left: 6px;
+  }
+  form {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+  }
+  form h6 {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-size: 13px;
+  }
+  form .form-container > div {
+    margin-bottom: 25px;
+  }
+  form .form-container {
+    background-color: white;
+    padding: 20px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  form .form-container .btn-ram-primary.large-device {
+    display: none;
+  }
+  form .label span {
+    font-size: 13px;
+  }
+  form .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    font-size: 11px !important;
+  }
+  form .css-66dh3a-MuiInputBase-input-MuiInput-input {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  .top-side {
+    background-position-x: -534px;
+  }
+  .top-side .top-side-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .top-side .top-side-container .description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .top-side h1.title {
+    font-size: 30px;
+    position: relative;
+    padding-left: 36px;
+  }
+  .top-side h1.title::before {
+    background-size: 60px 60px;
+    bottom: 5px;
+    width: 60px;
+    height: 60px;
+    left: -5px;
+    bottom: 8px;
+  }
+  .top-side p {
+    padding-left: 18px;
+  }
+  form {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+  }
+  form h6 {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  form .form-container > div {
+    margin-bottom: 25px;
+  }
+  form .form-container {
+    background-color: white;
+    padding: 20px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  form .form-container .btn-ram-primary.large-device {
+    display: none;
+  }
+  form .label span {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .top-side {
+    background-position-x: -675px;
+  }
+  .top-side .top-side-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .top-side .top-side-container .description {
+    margin-top: 25px;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  .top-side h1.title {
+    font-size: 30px;
+    position: relative;
+    padding-left: 36px;
+  }
+  .top-side h1.title::before {
+    background-size: 60px 60px;
+    bottom: 5px;
+    width: 60px;
+    height: 60px;
+    left: -5px;
+    bottom: 8px;
+  }
+  .top-side p {
+    padding-left: 30px;
+  }
+  form {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+  }
+  form h6 {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  form .form-container > div {
+    margin-bottom: 25px;
+  }
+  form .form-container {
+    background-color: white;
+    padding: 20px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  form .form-container .btn-ram-primary.large-device {
+    display: none;
+  }
+  form .label span {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1090px) {
+  .home
+.top-side .top-side-container .description {
+    width: 70%;
+  }
+  .home
+.top-side .top-side-container form .label span {
+    font-size: 13px;
+  }
+  .home
+.top-side .top-side-container .btn-ram-primary.small-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home .top-side-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .top-side-container .description {
+    width: 60%;
+  }
+  .home .top-side-container .description h1.title {
+    position: relative;
+    padding-left: 36px;
+    font-size: 35px;
+  }
+  .home .top-side-container .description h1.title::before {
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    top: -24px;
+    left: 2px;
+  }
+  .home .top-side-container .description p {
+    padding-left: 48px;
+  }
+  .home .top-side-container form {
+    margin-top: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+  }
+  .home .top-side-container form .border-field {
+    border-right: 1px solid #7070707d;
+  }
+  .home .top-side-container form .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    font-size: 12px !important;
+  }
+  .home .top-side-container form .css-66dh3a-MuiInputBase-input-MuiInput-input {
+    font-size: 12px !important;
+  }
+  .home .top-side-container .form-container {
+    padding: 15px 12px 15px 12px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: transparent;
+    -webkit-filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+            filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+    /* Note: currently only Safari supports backdrop-filter */
+    -webkit-backdrop-filter: blur(27.6006px);
+            backdrop-filter: blur(27.6006px);
+    --webkit-backdrop-filter: blur(27.60059928894043px);
+    background-color: rgba(255, 255, 255, 0.06);
+    /* (plus shape's fill blended on top as a separate layer with 72.98% opacity) */
+    -webkit-box-shadow: 1px 3px 16px #0000003b;
+            box-shadow: 1px 3px 16px #0000003b;
+  }
+  .home .top-side-container .form-container .btn-ram-primary.small-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home .top-side-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .top-side-container .description {
+    width: 60%;
+  }
+  .home h1.title {
+    position: relative;
+    padding-left: 36px;
+    font-size: 44px;
+  }
+  .home h1.title::before {
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    top: -28px;
+    left: -2px;
+  }
+  .home p {
+    padding-left: 48px;
+    font-size: 21px;
+  }
+  .home form {
+    margin-top: 45px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 25px;
+  }
+  .home form .border-field {
+    border-right: 1px solid #7070707d;
+  }
+  .home form .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    font-size: 12px !important;
+  }
+  .home form .css-66dh3a-MuiInputBase-input-MuiInput-input {
+    font-size: 12px !important;
+  }
+  .home .form-container {
+    padding: 15px 12px 15px 12px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: transparent;
+    -webkit-filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+            filter: drop-shadow(0px 10px 35px rgba(0, 0, 0, 0.23));
+    /* Note: currently only Safari supports backdrop-filter */
+    -webkit-backdrop-filter: blur(27.6006px);
+            backdrop-filter: blur(27.6006px);
+    --webkit-backdrop-filter: blur(27.60059928894043px);
+    background-color: rgba(255, 255, 255, 0.06);
+    /* (plus shape's fill blended on top as a separate layer with 72.98% opacity) */
+    -webkit-box-shadow: 1px 3px 16px #0000003b;
+            box-shadow: 1px 3px 16px #0000003b;
+  }
+  .home .form-container .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    font-size: 13px !important;
+  }
+  .home .form-container .css-66dh3a-MuiInputBase-input-MuiInput-input {
+    font-size: 13px !important;
+  }
+  .home .form-container .btn-ram-primary.small-device {
+    display: none;
+  }
+}
 /*# sourceMappingURL=home.css.map */
