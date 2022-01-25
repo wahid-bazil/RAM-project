@@ -119,7 +119,7 @@ function Home() {
                     </form>
                 </div>
             </div>
-           {/* <SliderIdex />*/}
+            {/* <SliderIdex />*/}
         </div>
     );
 }

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.authorization {
+    img{
+        width: 100%;
+    }
+    .logo{
+        img{
+            width: 110px;
+        }
+    }
+    h2{
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        margin-top: 95px;
+        text-align: center;
+        span{
+            color: #C82345;
+          
+        }
+    }
+    form {
+        padding-left: 14px;
+        padding-right: 14px;
+        .form-field{
+            position: relative;
+            i{
+                position: absolute;
+                right: 13px;
+                font-size: 24px;
+                top: 37px;
+                opacity: 0.3;
+            }
+        }
+        input{
+            background: #fff;     
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+            border: none;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            padding-left: 11px;
+            border-radius: 5px;
+            width: 100%;
+            background: #fff;
+            margin-top: 27px;
+        }
+
+        label{
+            position: absolute;
+            top: 28px;
+            left: 10px;
+            color: #5d5d5d;
+            opacity: 0.64;
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+        }
+        .msg{
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            margin-top: 25px;
+            color: #5d5d5d;
+        }
+        .submit{
+            border-radius: 6px;
+            background: #c82345;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+            color: white;
+            width: 100%;
+            border: none;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            margin-top: 25px;
+            padding-top: 13px;
+            padding-bottom:13px ;
+        }
+      
+    }
+  
+}

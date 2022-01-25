@@ -5,13 +5,15 @@ import Header from './component/header';
 import Home from './component/home';
 
 import Surclassement from './component/surclassement';
+import Test from './component/test';
+import Test0 from './component/test/test0';
 
 
 const App =()=>{
   document.body.style.backgroundColor = "white"
   return (
-    <div className="App">
-      <Surclassement/>
+    <div >
+      <Test/>
     </div>
   );
 }
